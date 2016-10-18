@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<head>
+    <title>Rate My Choice</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="javascripts/app.js"></script>
+</head>
+
+<body>
+    <nav class="ui fixed menu">
+        <div class="left menu">
+            <div class="header siteheader item">
+                    <a href= "home.html">Rate My Choice</a>
+            </div>
+        </div>
+        <div class="ui container">
+            <div class="item">
+                <div class="ui left icon a">
+                    <i class="comments icon"></i>
+                    <a href= "faq.html">FAQ</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ui left icon a">
+                    <i class="settings icon"></i>
+                    <a href= "#">Support</a>
+                </div>
+            </div>
+            <div class="right right_menu1 menu">
+                <div class="active item">
+                <div class="ui buttons">
+                    <div class="ui signup blue button">
+                    <div class="ui left icon a">
+                        <i class="add user icon"></i>
+                        Sign Up
+                    </div>
+                    </div>
+                    <div class="or"></div>
+                    <div class="ui login green button">
+                    <div class="ui left icon a">
+                        <i class="sign in icon"></i>
+                        Log In
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="right right_menu2 menu">
+                <div class="active item">
+                	<div class="ui left labeled button" tabindex="0">
+					  <a class="ui basic right pointing label">
+					  </a>
+					  <div class="ui red logout button">
+					    <i class="log out icon"></i>Log Out
+					  </div>
+					  <span class="userId"></span>
+					</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="ui middle aligned center aligned grid">
+            <div class="column">
+                <div class="ui gray inverted fixed header segment">                 
+                    <h1 class="ui middle aligned center aligned top_header">Rate My Choice</h1>
+                </div>
+                <div class="ui gray tertiary login_seg segment">
+                	<h3 class="ui header">To add movies/TV shows to your profile, click here</h3>
+                	<div class ="ui blue addmovie_button button">Add Movies/TV Shows</div>
+                </div>
+                <div class="ui gray tertiary main_seg segment">
+                    <h2 class="ui header">Let's get started!</h2>
+                    <div class="main_window">
+                        <div class="field">
+                            <div class="ui blue massive button">
+                                <i class="arrow circle right icon"></i>
+                            </div>
+                        </div>
+                        <div class="field">
+                                <h2 class="ui header">Want to know what people think?</h2>
+                                <div class="ui blue large button">
+                                <i class="add user icon"></i>Sign up
+                            </div>
+                        </div>     
+                    </div>
+                    
+                </div>
+                <div class="ui signup_modal small modal">
+                    <div class="ui gray tertiary form_seg segment">
+                    <h2 class="ui header">First things first, let's sign up!</h2>
+                    <div class="info message"></div>
+                    <form class="ui large signup_form form">
+                        <!-- <div class="ui gray tertiary form_seg segment"> -->
+                        <div class="field">
+                                <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="uname" placeholder="Enter User Name ">
+                                </div>
+                        </div>
+                        <div class="field">
+                                <input type="text" name="email" placeholder="Enter Email Address ">
+                        </div>
+                        <div class="field">
+                                <input type="password" name="pwd1" placeholder="Enter Password ">
+                        </div>
+                        <div class="field">
+                                <input type="password" name="pwd2" placeholder="Confirm Password ">
+                        </div>
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" name="chck">
+                                <label>I agree to the 
+                                    <a href="#">Terms</a> and 
+                                    <a href="#">Conditions</a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui blue submit button">
+                                <i class="add user icon"></i>Sign Up
+                            </div>
+                        </div>   
+                        <div class="field"> Already have an account?
+                            <a class="login">Log In</a> 
+                        </div>    
+                        <div class="ui error message"></div>  
+                        <!-- </div> -->
+                        <div class="result"></div>
+                    </form>
+                    
+                </div>
+
+                </div>  <!--end signup modal -->
+                <div class="ui login_modal small modal">
+                    <div class="ui gray tertiary form_seg segment">
+                    <h2 class="ui header">log in to your account</h2>
+                    <div class="info message"></div>
+                    <form class="ui large login_form form">
+                        <div class="field">
+                                <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="ulname" placeholder="Enter User Name ">
+                                </div>
+                        </div>
+                        <div class="field">
+                                <input type="password" name="pwd" placeholder="Enter Password ">
+                        </div>
+                        <div class="field">
+                            <div class="ui blue submit button">
+                                <i class="sign in icon"></i>Log in
+                            </div>
+                        </div>   
+                        <div class="field"> Don't have an account?
+                            <a class="signup">Sign up</a> 
+                        </div>    
+                        <div class="ui error message"></div> 
+                        <div class="result2"></div> 
+                    </form>
+                    
+                </div>
+                </div> <!--end login modal-->
+                <div class="ui small addmovie_modal modal">
+                	<div class="ui gray tertiary form_seg segment">
+                		<div class="info message"></div>
+	                    <form class="ui addmovie_form form">
+	                        <div class="field">
+	                                <div class="ui left icon input">
+	                                <i class="film icon"></i>
+	                                <input type="text" name="moviename" placeholder="Enter Name of the movie or TV show">
+	                                </div>
+	                        </div>
+	                        <div class="field">
+	                            <div class="ui blue submit button">
+	                                <i class="add square icon"></i>Add
+	                            </div>
+	                        </div>       
+	                        <div class="ui error message"></div> 
+	                        <div class="result3"></div> 
+	                    </form>
+                	</div>
+                </div>
+                <div class="ui gray inverted vertical footer segment">
+                    <div class="ui container">
+                        <div class="ui inverted stackable grid">
+                            <div class="left aligned eight wide column">
+                                <h4 class="ui inverted header">Contact Us</h4>
+                                <p>Rate My Choice</p>
+                                <p>555 Fiftieth Street</p>
+                                <p>Fullerton, CA 92831</p>
+                            </div>
+                            <div class="right aligned eight wide column">
+                                <h4 class="ui inverted header">Site Map</h4>
+                                <div class="ui inverted link list">
+                                    <a href="index.html" class="item">Home</a>
+                                    <a href="#" class="item">About us</a>
+                                    <a href="#" class="item">Privacy</a>
+                                    <a href="#" class="item">Support</a>
+                                    <a href="faq.html" class="item">FAQ</a>
+                                    <a href="#" class="item">Careers</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+
+</html>
