@@ -1,8 +1,126 @@
 //client side javascript
 
+//client side javascript
+
+
+//==========================================================
+//Use to display movie into html 
+//  IN    movieObject - movieObject only that is formatted
+//                      from OMBD
+//  
+//  TAG   #movieCard - html id 
+//==========================================================
+
+var AddMovieToHtml= function(movieObject){
+  'use strict';
+
+  //$('#movieCard2').append(
+  $('#movieCard').empty();
+
+  /*$('#movieCard').append(
+      '<div class="ui cards">'+
+      '<div class="card"><div class="image">' +
+        '<img src="' + movieObject.Poster + '">'+
+      '</div>' +
+      '<div class="content">' +
+        '<div class="header" id="movieTitle">'+ movieObject.Title + '</div>' +
+        '<div class="meta">' + movieObject.Rated + '</div>' +
+        '<div class="description">' + movieObject.Genre + '</div>' +
+      '</div>' +
+      '<div class="extra content">' +
+        '<div class="meta">'+ movieObject.Plot + '</div>'+
+      '</div>' + 
+      '<div class="extra content" id="VoteResult">' +
+        '<div class="meta">VotePlease T-T</div>'+
+        '<div class="ui two buttons">' + 
+          '<div id="VoteUp" class="ui green button">Watch</div>'+
+          '<div class="ui red button" id="VoteDown">Ignore</div>'+
+        '</div>'+
+      '</div>'+
+    '</div>'
+    );*/
+
+    //supra code
+    $('#movieCard').append(
+      '<div class="ui middle aligned center aligned cards">'+
+      '<div class="ui centered card"><div class="image">' +
+        '<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_SX300.jpg">'+
+      '</div>' +
+      '<div class="content">' +
+        '<div class="header" id="movieTitle">'+ movieObject.movieName + '</div>' +
+      '</div>' +
+      '<div class="extra content" id="VoteResult">' +
+        '<div class="meta">VotePlease T-T</div>'+
+        '<div class="ui two buttons">' + 
+          '<div id="VoteUp" class="ui green button">Watch</div>'+
+          '<div class="ui red button" id="VoteDown">Ignore</div>'+
+        '</div>'+
+      '</div>'+
+    '</div>'
+    );
+    
+    test();
+    VoteButton();
+    /*
+    '<div class="ui two buttons">' + 
+      '<div id="VoteUp" type="button" class="ui basic green button">Watch</div>'+
+      '<div class="ui basic red button" id="VoteDown">Ignore</div>'+
+    '</div>'+
+    '</div></div>' +
+    '</div>'
+    */
+    
+    console.log("printEverything");
+}
+
+var VoteButton = function(){
+  $('#VoteUp').click(function () {
+    console.log('testUp');
+    $('#VoteResult').empty();
+    Voting(1);
+  });
+  
+  $('#VoteDown').click(function () {
+    console.log('testDown');
+    $('#VoteResult').empty();
+    Voting(-1);
+  });
+  
+}
+
+
+var Voting = function(score){
+  var result; 
+  var jsonStr = JSON.stringify({'score': score});
+	console.log(jsonStr);
+  
+  $.ajax({  
+    type: 'POST',
+    data: jsonStr,
+      dataType: 'json',
+      contentType: 'application/json',
+      url: 'http://localhost:3000/scoreUpdate',            
+      success: function(data) {
+        result = data;
+        console.log(result);
+        $('#VoteResult').append('Score: ' + result.scoreIn);
+      },
+      error: function(){
+        console.log("Cannot Vote")
+      }
+  });
+
+}
+//end of new code
+
+
 $(function(){
 
 	callShowAllMoviesFunction();
+
+	$('.watch').click(function(){
+		console.log('watch button clicked');
+	});
 
 	$('.right_menu2').hide();
 	$('.login_seg').hide();
@@ -214,7 +332,16 @@ var callSignUpFunction = function(){
 	                                    $('.login_seg').show();
 	        							$('.main_seg').hide();
 
-	        							// callAddMoviesFunction();
+	        							console.log(data.movieList.length);
+	        							for(var i=0;i<data.movieList.length;i++)
+	        							{
+	        								console.log('inside for loop');
+	        								console.log(data.movieList[i].movieName);
+	        								$result = $('<div class='+"'listitem'"+'><div class='+"'listcontent'"+'>').
+                                    		text(data.movieList[i].movieName);
+                                    		$('.listitem').append($result);
+	        								
+	        							}
                                     }
                                     	
 
@@ -267,11 +394,12 @@ var callSignUpFunction = function(){
                     // data: jsonStr,
                     dataType: 'json',
                     // contentType: 'application/json',
-                    url: 'http://localhost:3000/hi',            
+                    url: 'http://localhost:3000/ShowMovie',            
                     success: function(data) {
                                     console.log('success');
                                     console.log(JSON.stringify(data));
                                     console.log(data);
+                                    AddMovieToHtml(data);
                                     // $('.result3').html(data);
                                     // $('.addmovie_form').trigger('reset');
                                     // // $('.addmovie_modal').modal('hide');
