@@ -52,14 +52,14 @@ var AddMovieToHtml= function(movieObject){
       '<div class="extra content" id="VoteResult">' +
         '<div class="meta">VotePlease T-T</div>'+
         '<div class="ui two buttons">' + 
-          '<div id="VoteUp" class="ui green button">Watch</div>'+
-          '<div class="ui red button" id="VoteDown">Ignore</div>'+
+          '<div id="' + movieObject.movieName + ' Up" class="VoteUp ui green button">Watch</div>'+
+          '<div id="' + movieObject.movieName + ' Down" class="VoteDown ui red button">Ignore</div>'+
         '</div>'+
       '</div>'+
     '</div>'
     );
     
-    test();
+    //test();
     VoteButton();
     /*
     '<div class="ui two buttons">' + 
@@ -74,24 +74,27 @@ var AddMovieToHtml= function(movieObject){
 }
 
 var VoteButton = function(){
-  $('#VoteUp').click(function () {
-    console.log('testUp');
+	
+  $('.VoteUp').click(function () {
+    console.log('Voting up');
+	var myId = $('.VoteUp').attr('id');
     $('#VoteResult').empty();
-    Voting(1);
+    Voting(1, myId.substring(0, myId.length-3));
   });
   
-  $('#VoteDown').click(function () {
-    console.log('testDown');
+  $('.VoteDown').click(function () {
+    console.log('Voting down');
+	var myId = $('.VoteDown').attr('id');
     $('#VoteResult').empty();
-    Voting(-1);
+    Voting(-1, myId.substring(0, myId.length-5));
   });
   
 }
 
 
-var Voting = function(score){
+var Voting = function(score, movieName){
   var result; 
-  var jsonStr = JSON.stringify({'score': score});
+  var jsonStr = JSON.stringify({'score': score, 'movieName': movieName});
 	console.log(jsonStr);
   
   $.ajax({  
@@ -103,7 +106,7 @@ var Voting = function(score){
       success: function(data) {
         result = data;
         console.log(result);
-        $('#VoteResult').append('Score: ' + result.scoreIn);
+        $('#VoteResult').append('Watch: ' + result.upVote + ' Ignore: ' + result.downVote);
       },
       error: function(){
         console.log("Cannot Vote")

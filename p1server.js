@@ -22,6 +22,9 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var mongoose = require('mongoose');
 
+mongoose.connect('mongodb://localhost/Project1');
+mongoose.set('debug', true)
+
 var userSchema = new mongoose.Schema({  
   userName: String,
   email: String,
@@ -30,13 +33,13 @@ var userSchema = new mongoose.Schema({
 
 var movieSchema = new mongoose.Schema({
 	movieName: String,
-	mUserId: [String]
+	mUserId: [String],
+	mUpVote: Number,
+	mDownVote: Number
 });
 
 var UserDb = mongoose.model('user', userSchema); 
 var MovieDb = mongoose.model('movie', movieSchema);
-
-mongoose.connect('mongodb://localhost/Project1');
 
 var app = express();
 app.use(bodyParser.urlencoded({
@@ -127,7 +130,7 @@ app.post('/addmovies', function(req, res){
 	console.log(req.body.userId);
 	MovieDb.findOne({movieName: req.body.movieName}).exec(function(err, movie){
 		if(!movie){
-			var m1 = new MovieDb({movieName: req.body.movieName});
+			var m1 = new MovieDb({movieName: req.body.movieName, mUpVote: 0,mDownVote:0 });
 			m1.mUserId.push(uName);
 			m1.save(function(err, result) {
 				if(err){
@@ -180,6 +183,45 @@ app.post('/addmovies', function(req, res){
 // 	res.json(movieCollection);
 // });
 
+app.post('/scoreUpdate', function(req, res){
+	console.log('inside post method for voting');
+	console.log('The movie is ' + req.body.movieName);
+
+	MovieDb.findOne({movieName:req.body.movieName},{_id:0, mUpVote:1, mDownVote:1}, 
+		function(err, movie) {
+			console.log(movie);
+			if (req.body.score == 1) {
+			  console.log('Updating upvote!');
+		 	  MovieDb.update({movieName:req.body.movieName},{$inc: {mUpVote: 1}}, function(err, raw) {
+		 	    if (err) {
+		 		  console.log('err');
+		 		} else {
+		 		  console.log('The raw response from Mongo was ', raw);
+				  res.json({upVote: movie.mUpVote + 1, downVote: movie.mDownVote});
+		 	 }
+		 	 });
+			} else if (req.body.score == -1){
+			  console.log('Updating downvote!');
+		 	  MovieDb.update({movieName:req.body.movieName},{$inc: {mDownVote: 1}}, function(err, raw) {
+		 	    if (err) {
+		 		  console.log('err');
+		 		} else {
+		 		  console.log('The raw response from Mongo was ', raw);
+				  res.json({upVote: movie.mUpVote, downVote: movie.mDownVote + 1});
+		 	 }
+		 	 });
+			}
+		});
+
+
+	//var str = JSON.stringify(req.body);
+	// console.log(req.body);
+	// console.log(str);
+	//var obj = JSON.parse(str);
+	// console.log(obj);
+	// console.log('body: ' + JSON.stringify(req.body));
+});
+
 app.get('/ShowMovie', function(req,res) {
 	console.log('in get all movies');
 	MovieDb.find({},{movieName:1,_id:0},function(err, movies) {
@@ -198,7 +240,7 @@ app.get('/ShowMovie', function(req,res) {
 
 var showMoviesFor1User = function(userid){
 	console.log('in get movies for 1 user');
-	MovieDb.find({mUserId:userid},{movieName:1,_id:0},function(err, movies) {
+	MovieDb.find({uId:userid},{movieName:1,_id:0},function(err, movies) {
 	    if (err) {
 	      // onErr(err, callback);
 	      console.log('error!!!!');
