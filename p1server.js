@@ -30,7 +30,7 @@ var userSchema = new mongoose.Schema({
 
 var movieSchema = new mongoose.Schema({
 	movieName: String,
-	mUserId: String
+	mUserId: [String]
 });
 
 var UserDb = mongoose.model('user', userSchema); 
@@ -93,17 +93,22 @@ app.post('/login', function(req, res){
 					res.json({'error':'user does not exist, please sign up first'});
 				}
 		else{
-			// UserDb.findOne({password: req.body.password1}).exec(function(err, user){
 			    if(user.password !== req.body.password1){
 			    			console.log('authentication failure');
 							res.json({'error':'authentication failure, please check your details'});
 			    }
 			    else{
 					console.log('user login successful');
-					console.log(req.body.password1);
-					console.log(user.password);
-					console.log(user._id);
-					res.json({'username':req.body.username1, 'userid':user._id});
+					MovieDb.find({mUserId:user._id},{movieName:1,_id:0},function(err, movies) {
+					    if (err) {
+					      // onErr(err, callback);
+					      console.log('error!!!!');
+					    } else {
+					      console.log(movies)
+					      res.json({'username':req.body.username1, 'userid':user._id, 'movieList':movies});
+					    }
+					});
+					// res.json({'username':req.body.username1, 'userid':user._id});
 					}
 			}
 					
@@ -114,15 +119,16 @@ app.post('/login', function(req, res){
 });
 
 app.post('/addmovies', function(req, res){
+	var flagCounter = 0;
 	console.log('inside addmovies post method');
 	var movieName = req.body.movieName;
+	var uName = req.body.userId;
 	console.log(movieName);
 	console.log(req.body.userId);
-	// res.json('movie added successfully');
 	MovieDb.findOne({movieName: req.body.movieName}).exec(function(err, movie){
 		if(!movie){
-			var m1 = new MovieDb({movieName: req.body.movieName,
-								mUserId: req.body.userId});
+			var m1 = new MovieDb({movieName: req.body.movieName});
+			m1.mUserId.push(uName);
 			m1.save(function(err, result) {
 				if(err){
 					console.log('error while adding movie');
@@ -135,19 +141,75 @@ app.post('/addmovies', function(req, res){
 			});
 		}
 		else{
-			console.log('movie already exists in the list');
-			res.json('movie already exists in your watchlist, please add diffrent title');
+			console.log(movie.mUserId.length);
+			for(var i=0;i<movie.mUserId.length;i++){
+				if(movie.mUserId[i] === req.body.userId)
+				{
+					// console.log('movie already exists in user's list');
+					console.log(movie.mUserId[i]);
+					flagCounter++;
+				}
+				console.log(flagCounter);
+			}
+			if(flagCounter == 1){
+				res.json("movie already exists in your list");
+			}
+				else{
+					movie.mUserId.push(req.body.userId);
+					movie.save(function(err, result) {
+						if(err){
+							console.log('error while adding movie');
+							res.json('error while adding movie');
+						}
+						else{
+							console.log('movie added to your list successfully');
+							res.json('movie added to your list successfully');
+						}
+					});
+				}
+			
 		}
 		});
 });
 
-app.get('/hi', function(req,res) {
+// app.get('/hi', function(req,res) {
+// 	console.log('in get all movies');
+// 	var movieCollection = MovieDb.find();
+// 	console.log(movieCollection);
+// 	console.log(JSON.stringify(movieCollection));
+// 	res.json(movieCollection);
+// });
+
+app.get('/ShowMovie', function(req,res) {
 	console.log('in get all movies');
-	var movieCollection = MovieDb.find();
-	console.log(movieCollection);
-	console.log(JSON.stringify(movieCollection));
-	res.json(movieCollection);
+	MovieDb.find({},{movieName:1,_id:0},function(err, movies) {
+    if (err) {
+      // onErr(err, callback);
+      console.log('error!!!!');
+    } else {
+      // mongoose.connection.close();
+      console.log(movies);
+      var movieIndex = movies[Math.floor(Math.random()*movies.length)];
+      res.json(movieIndex);
+      // callback("", movies);
+    }
+		});
 });
+
+var showMoviesFor1User = function(userid){
+	console.log('in get movies for 1 user');
+	MovieDb.find({mUserId:userid},{movieName:1,_id:0},function(err, movies) {
+	    if (err) {
+	      // onErr(err, callback);
+	      console.log('error!!!!');
+	    } else {
+	      // mongoose.connection.close();
+	      console.log(movies)
+	      res.json(movies);
+	      // callback("", movies);
+	    }
+	});
+}
 
 
 app.listen(3000);
