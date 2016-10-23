@@ -1,0 +1,2921 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/vagrant/n/bin/node',
+1 verbose cli   '/home/vagrant/n/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@4.0.0
+3 info using node@v6.8.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData jade
+20 silly mapToRegistry name jade
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'jade',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'jade',
+23 silly mapToRegistry   name: 'jade',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/jade
+25 silly fetchNamedPackageData request
+26 silly mapToRegistry name request
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'request',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'request',
+29 silly mapToRegistry   name: 'request',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/request
+31 verbose request uri https://registry.npmjs.org/jade
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 10:23:15 PM
+34 verbose request id 50031bdce02c5ade
+35 verbose etag "2K81NWHHM5K64VLR7MW9U5YM4"
+36 http request GET https://registry.npmjs.org/jade
+37 verbose request uri https://registry.npmjs.org/request
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 10:23:15 PM
+40 verbose etag "8XIYM6LMD6CG9G6UEH1NA80MY"
+41 http request GET https://registry.npmjs.org/request
+42 http 304 https://registry.npmjs.org/request
+43 verbose headers { date: 'Sun, 23 Oct 2016 22:23:15 GMT',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   'cache-control': 'max-age=300',
+43 verbose headers   etag: '"8XIYM6LMD6CG9G6UEH1NA80MY"',
+43 verbose headers   age: '4',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'x-served-by': 'cache-lax8637-LAX',
+43 verbose headers   'x-cache': 'HIT',
+43 verbose headers   'x-cache-hits': '1',
+43 verbose headers   'x-timer': 'S1477261395.490174,VS0,VE0',
+43 verbose headers   vary: 'Accept-Encoding' }
+44 silly get cb [ 304,
+44 silly get   { date: 'Sun, 23 Oct 2016 22:23:15 GMT',
+44 silly get     via: '1.1 varnish',
+44 silly get     'cache-control': 'max-age=300',
+44 silly get     etag: '"8XIYM6LMD6CG9G6UEH1NA80MY"',
+44 silly get     age: '4',
+44 silly get     connection: 'keep-alive',
+44 silly get     'x-served-by': 'cache-lax8637-LAX',
+44 silly get     'x-cache': 'HIT',
+44 silly get     'x-cache-hits': '1',
+44 silly get     'x-timer': 'S1477261395.490174,VS0,VE0',
+44 silly get     vary: 'Accept-Encoding' } ]
+45 verbose etag https://registry.npmjs.org/request from cache
+46 verbose get saving request to /home/vagrant/.npm/registry.npmjs.org/request/.cache.json
+47 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+48 http 304 https://registry.npmjs.org/jade
+49 verbose headers { date: 'Sun, 23 Oct 2016 22:23:15 GMT',
+49 verbose headers   via: '1.1 varnish',
+49 verbose headers   'cache-control': 'max-age=300',
+49 verbose headers   etag: '"2K81NWHHM5K64VLR7MW9U5YM4"',
+49 verbose headers   age: '235',
+49 verbose headers   connection: 'keep-alive',
+49 verbose headers   'x-served-by': 'cache-lax8637-LAX',
+49 verbose headers   'x-cache': 'HIT',
+49 verbose headers   'x-cache-hits': '2',
+49 verbose headers   'x-timer': 'S1477261395.490983,VS0,VE0',
+49 verbose headers   vary: 'Accept-Encoding' }
+50 silly get cb [ 304,
+50 silly get   { date: 'Sun, 23 Oct 2016 22:23:15 GMT',
+50 silly get     via: '1.1 varnish',
+50 silly get     'cache-control': 'max-age=300',
+50 silly get     etag: '"2K81NWHHM5K64VLR7MW9U5YM4"',
+50 silly get     age: '235',
+50 silly get     connection: 'keep-alive',
+50 silly get     'x-served-by': 'cache-lax8637-LAX',
+50 silly get     'x-cache': 'HIT',
+50 silly get     'x-cache-hits': '2',
+50 silly get     'x-timer': 'S1477261395.490983,VS0,VE0',
+50 silly get     vary: 'Accept-Encoding' } ]
+51 verbose etag https://registry.npmjs.org/jade from cache
+52 verbose get saving jade to /home/vagrant/.npm/registry.npmjs.org/jade/.cache.json
+53 verbose correctMkdir /home/vagrant/.npm correctMkdir already in flight; waiting
+54 silly resolveWithNewModule jade@1.11.0 checking installable status
+55 silly cache add args [ 'jade@~1.11.0', null ]
+56 verbose cache add spec jade@~1.11.0
+57 silly cache add parsed spec Result {
+57 silly cache add   raw: 'jade@~1.11.0',
+57 silly cache add   scope: null,
+57 silly cache add   escapedName: 'jade',
+57 silly cache add   name: 'jade',
+57 silly cache add   rawSpec: '~1.11.0',
+57 silly cache add   spec: '>=1.11.0 <1.12.0',
+57 silly cache add   type: 'range' }
+58 silly addNamed jade@>=1.11.0 <1.12.0
+59 verbose addNamed ">=1.11.0 <1.12.0" is a valid semver range for jade
+60 silly addNameRange { name: 'jade', range: '>=1.11.0 <1.12.0', hasData: false }
+61 silly mapToRegistry name jade
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: 'jade',
+64 silly mapToRegistry   scope: null,
+64 silly mapToRegistry   escapedName: 'jade',
+64 silly mapToRegistry   name: 'jade',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/jade
+66 verbose addNameRange registry:https://registry.npmjs.org/jade not in flight; fetching
+67 silly resolveWithNewModule request@2.75.0 checking installable status
+68 silly cache add args [ 'request@^2.75.0', null ]
+69 verbose cache add spec request@^2.75.0
+70 silly cache add parsed spec Result {
+70 silly cache add   raw: 'request@^2.75.0',
+70 silly cache add   scope: null,
+70 silly cache add   escapedName: 'request',
+70 silly cache add   name: 'request',
+70 silly cache add   rawSpec: '^2.75.0',
+70 silly cache add   spec: '>=2.75.0 <3.0.0',
+70 silly cache add   type: 'range' }
+71 silly addNamed request@>=2.75.0 <3.0.0
+72 verbose addNamed ">=2.75.0 <3.0.0" is a valid semver range for request
+73 silly addNameRange { name: 'request', range: '>=2.75.0 <3.0.0', hasData: false }
+74 silly mapToRegistry name request
+75 silly mapToRegistry using default registry
+76 silly mapToRegistry registry https://registry.npmjs.org/
+77 silly mapToRegistry data Result {
+77 silly mapToRegistry   raw: 'request',
+77 silly mapToRegistry   scope: null,
+77 silly mapToRegistry   escapedName: 'request',
+77 silly mapToRegistry   name: 'request',
+77 silly mapToRegistry   rawSpec: '',
+77 silly mapToRegistry   spec: 'latest',
+77 silly mapToRegistry   type: 'tag' }
+78 silly mapToRegistry uri https://registry.npmjs.org/request
+79 verbose addNameRange registry:https://registry.npmjs.org/request not in flight; fetching
+80 verbose get https://registry.npmjs.org/jade not expired, no request
+81 silly addNameRange number 2 { name: 'jade', range: '>=1.11.0 <1.12.0', hasData: true }
+82 silly addNameRange versions [ 'jade',
+82 silly addNameRange   [ '0.0.1',
+82 silly addNameRange     '0.0.2',
+82 silly addNameRange     '0.1.0',
+82 silly addNameRange     '0.2.0',
+82 silly addNameRange     '0.2.1',
+82 silly addNameRange     '0.2.2',
+82 silly addNameRange     '0.2.3',
+82 silly addNameRange     '0.2.4',
+82 silly addNameRange     '0.3.0',
+82 silly addNameRange     '0.4.0',
+82 silly addNameRange     '0.4.1',
+82 silly addNameRange     '0.5.0',
+82 silly addNameRange     '0.5.1',
+82 silly addNameRange     '0.5.2',
+82 silly addNameRange     '0.5.3',
+82 silly addNameRange     '0.5.4',
+82 silly addNameRange     '0.5.5',
+82 silly addNameRange     '0.5.6',
+82 silly addNameRange     '0.5.7',
+82 silly addNameRange     '0.6.0',
+82 silly addNameRange     '0.6.1',
+82 silly addNameRange     '0.6.3',
+82 silly addNameRange     '0.7.0',
+82 silly addNameRange     '0.7.1',
+82 silly addNameRange     '0.8.0',
+82 silly addNameRange     '0.8.1',
+82 silly addNameRange     '0.8.2',
+82 silly addNameRange     '0.8.3',
+82 silly addNameRange     '0.8.4',
+82 silly addNameRange     '0.8.5',
+82 silly addNameRange     '0.8.6',
+82 silly addNameRange     '0.8.7',
+82 silly addNameRange     '0.8.8',
+82 silly addNameRange     '0.8.9',
+82 silly addNameRange     '0.9.0',
+82 silly addNameRange     '0.9.1',
+82 silly addNameRange     '0.9.2',
+82 silly addNameRange     '0.9.3',
+82 silly addNameRange     '0.10.0',
+82 silly addNameRange     '0.10.1',
+82 silly addNameRange     '0.10.2',
+82 silly addNameRange     '0.10.3',
+82 silly addNameRange     '0.10.4',
+82 silly addNameRange     '0.10.5',
+82 silly addNameRange     '0.10.6',
+82 silly addNameRange     '0.10.7',
+82 silly addNameRange     '0.11.0',
+82 silly addNameRange     '0.11.1',
+82 silly addNameRange     '0.12.0',
+82 silly addNameRange     '0.12.1',
+82 silly addNameRange     '0.12.2',
+82 silly addNameRange     '0.12.3',
+82 silly addNameRange     '0.12.4',
+82 silly addNameRange     '0.13.0',
+82 silly addNameRange     '0.14.0',
+82 silly addNameRange     '0.14.1',
+82 silly addNameRange     '0.14.2',
+82 silly addNameRange     '0.15.0',
+82 silly addNameRange     '0.15.1',
+82 silly addNameRange     '0.15.2',
+82 silly addNameRange     '0.15.3',
+82 silly addNameRange     '0.15.4',
+82 silly addNameRange     '0.16.0',
+82 silly addNameRange     '0.16.1',
+82 silly addNameRange     '0.16.2',
+82 silly addNameRange     '0.16.3',
+82 silly addNameRange     '0.16.4',
+82 silly addNameRange     '0.17.0',
+82 silly addNameRange     '0.18.0',
+82 silly addNameRange     '0.19.0',
+82 silly addNameRange     '0.20.0',
+82 silly addNameRange     '0.20.1',
+82 silly addNameRange     '0.20.2',
+82 silly addNameRange     '0.20.3',
+82 silly addNameRange     '0.21.0',
+82 silly addNameRange     '0.22.0',
+82 silly addNameRange     '0.22.1',
+82 silly addNameRange     '0.23.0',
+82 silly addNameRange     '0.24.0',
+82 silly addNameRange     '0.25.0',
+82 silly addNameRange     '0.26.0',
+82 silly addNameRange     '0.26.1',
+82 silly addNameRange     '0.26.2',
+82 silly addNameRange     '0.26.3',
+82 silly addNameRange     '0.27.0',
+82 silly addNameRange     '0.27.1',
+82 silly addNameRange     '0.27.2',
+82 silly addNameRange     '0.27.3',
+82 silly addNameRange     '0.27.4',
+82 silly addNameRange     '0.27.5',
+82 silly addNameRange     '0.27.6',
+82 silly addNameRange     '0.27.7',
+82 silly addNameRange     '0.28.0',
+82 silly addNameRange     '0.28.1',
+82 silly addNameRange     '0.28.2',
+82 silly addNameRange     '0.29.0',
+82 silly addNameRange     '0.30.0',
+82 silly addNameRange     '0.31.0',
+82 silly addNameRange     '0.31.1',
+82 silly addNameRange     '0.31.2',
+82 silly addNameRange     ... 31 more items ] ]
+83 silly addNamed jade@1.11.0
+84 verbose addNamed "1.11.0" is a plain semver version for jade
+85 warn deprecated jade@1.11.0: Jade has been renamed to pug, please install the latest version of pug instead of jade
+86 verbose get https://registry.npmjs.org/request not expired, no request
+87 silly addNameRange number 2 { name: 'request', range: '>=2.75.0 <3.0.0', hasData: true }
+88 silly addNameRange versions [ 'request',
+88 silly addNameRange   [ '0.10.0',
+88 silly addNameRange     '0.8.3',
+88 silly addNameRange     '0.9.0',
+88 silly addNameRange     '0.9.1',
+88 silly addNameRange     '0.9.5',
+88 silly addNameRange     '1.0.0',
+88 silly addNameRange     '1.1.0',
+88 silly addNameRange     '1.1.1',
+88 silly addNameRange     '1.2.0',
+88 silly addNameRange     '1.9.0',
+88 silly addNameRange     '1.9.1',
+88 silly addNameRange     '1.9.2',
+88 silly addNameRange     '1.9.3',
+88 silly addNameRange     '1.9.5',
+88 silly addNameRange     '1.9.7',
+88 silly addNameRange     '1.9.8',
+88 silly addNameRange     '1.9.9',
+88 silly addNameRange     '2.0.0',
+88 silly addNameRange     '2.0.1',
+88 silly addNameRange     '2.0.2',
+88 silly addNameRange     '2.0.3',
+88 silly addNameRange     '2.0.4',
+88 silly addNameRange     '2.0.5',
+88 silly addNameRange     '2.1.0',
+88 silly addNameRange     '2.1.1',
+88 silly addNameRange     '2.2.0',
+88 silly addNameRange     '2.2.5',
+88 silly addNameRange     '2.2.6',
+88 silly addNameRange     '2.2.9',
+88 silly addNameRange     '2.9.0',
+88 silly addNameRange     '2.9.1',
+88 silly addNameRange     '2.9.2',
+88 silly addNameRange     '2.9.3',
+88 silly addNameRange     '2.9.100',
+88 silly addNameRange     '2.9.150',
+88 silly addNameRange     '2.9.151',
+88 silly addNameRange     '2.9.152',
+88 silly addNameRange     '2.9.153',
+88 silly addNameRange     '2.9.200',
+88 silly addNameRange     '2.9.201',
+88 silly addNameRange     '2.9.202',
+88 silly addNameRange     '2.9.203',
+88 silly addNameRange     '2.10.0',
+88 silly addNameRange     '2.11.0',
+88 silly addNameRange     '2.11.1',
+88 silly addNameRange     '2.11.2',
+88 silly addNameRange     '2.11.3',
+88 silly addNameRange     '2.11.4',
+88 silly addNameRange     '2.12.0',
+88 silly addNameRange     '2.14.0',
+88 silly addNameRange     '2.16.0',
+88 silly addNameRange     '2.16.2',
+88 silly addNameRange     '2.16.4',
+88 silly addNameRange     '2.16.6',
+88 silly addNameRange     '2.18.0',
+88 silly addNameRange     '2.19.0',
+88 silly addNameRange     '2.20.0',
+88 silly addNameRange     '2.21.0',
+88 silly addNameRange     '2.22.0',
+88 silly addNameRange     '2.23.0',
+88 silly addNameRange     '2.24.0',
+88 silly addNameRange     '2.25.0',
+88 silly addNameRange     '2.26.0',
+88 silly addNameRange     '2.27.0',
+88 silly addNameRange     '2.28.0',
+88 silly addNameRange     '2.29.0',
+88 silly addNameRange     '2.30.0',
+88 silly addNameRange     '2.31.0',
+88 silly addNameRange     '2.32.0',
+88 silly addNameRange     '2.33.0',
+88 silly addNameRange     '2.34.0',
+88 silly addNameRange     '2.35.0',
+88 silly addNameRange     '2.36.0',
+88 silly addNameRange     '2.37.0',
+88 silly addNameRange     '2.38.0',
+88 silly addNameRange     '2.39.0',
+88 silly addNameRange     '2.40.0',
+88 silly addNameRange     '2.41.0',
+88 silly addNameRange     '2.42.0',
+88 silly addNameRange     '2.43.0',
+88 silly addNameRange     '2.44.0',
+88 silly addNameRange     '2.45.0',
+88 silly addNameRange     '2.46.0',
+88 silly addNameRange     '2.47.0',
+88 silly addNameRange     '2.48.0',
+88 silly addNameRange     '2.49.0',
+88 silly addNameRange     '2.50.0',
+88 silly addNameRange     '2.51.0',
+88 silly addNameRange     '2.52.0',
+88 silly addNameRange     '2.53.0',
+88 silly addNameRange     '2.54.0',
+88 silly addNameRange     '2.55.0',
+88 silly addNameRange     '2.56.0',
+88 silly addNameRange     '2.57.0',
+88 silly addNameRange     '2.58.0',
+88 silly addNameRange     '2.59.0',
+88 silly addNameRange     '2.60.0',
+88 silly addNameRange     '2.61.0',
+88 silly addNameRange     '2.62.0',
+88 silly addNameRange     '2.63.0',
+88 silly addNameRange     ... 12 more items ] ]
+89 silly addNamed request@2.75.0
+90 verbose addNamed "2.75.0" is a plain semver version for request
+91 silly cache afterAdd jade@1.11.0
+92 verbose afterAdd /home/vagrant/.npm/jade/1.11.0/package/package.json not in flight; writing
+93 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+94 silly cache afterAdd request@2.75.0
+95 verbose afterAdd /home/vagrant/.npm/request/2.75.0/package/package.json not in flight; writing
+96 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+97 verbose afterAdd /home/vagrant/.npm/jade/1.11.0/package/package.json written
+98 verbose afterAdd /home/vagrant/.npm/request/2.75.0/package/package.json written
+99 silly fetchNamedPackageData constantinople
+100 silly mapToRegistry name constantinople
+101 silly mapToRegistry using default registry
+102 silly mapToRegistry registry https://registry.npmjs.org/
+103 silly mapToRegistry data Result {
+103 silly mapToRegistry   raw: 'constantinople',
+103 silly mapToRegistry   scope: null,
+103 silly mapToRegistry   escapedName: 'constantinople',
+103 silly mapToRegistry   name: 'constantinople',
+103 silly mapToRegistry   rawSpec: '',
+103 silly mapToRegistry   spec: 'latest',
+103 silly mapToRegistry   type: 'tag' }
+104 silly mapToRegistry uri https://registry.npmjs.org/constantinople
+105 verbose request uri https://registry.npmjs.org/constantinople
+106 verbose request no auth needed
+107 info attempt registry request try #1 at 10:23:15 PM
+108 verbose etag "CEF4OOMTVAYSEIL5QNT4SB8FT"
+109 http request GET https://registry.npmjs.org/constantinople
+110 http 304 https://registry.npmjs.org/constantinople
+111 verbose headers { date: 'Sun, 23 Oct 2016 22:23:15 GMT',
+111 verbose headers   via: '1.1 varnish',
+111 verbose headers   'cache-control': 'max-age=300',
+111 verbose headers   etag: '"CEF4OOMTVAYSEIL5QNT4SB8FT"',
+111 verbose headers   age: '234',
+111 verbose headers   connection: 'keep-alive',
+111 verbose headers   'x-served-by': 'cache-lax8637-LAX',
+111 verbose headers   'x-cache': 'HIT',
+111 verbose headers   'x-cache-hits': '1',
+111 verbose headers   'x-timer': 'S1477261395.752962,VS0,VE0',
+111 verbose headers   vary: 'Accept-Encoding' }
+112 silly get cb [ 304,
+112 silly get   { date: 'Sun, 23 Oct 2016 22:23:15 GMT',
+112 silly get     via: '1.1 varnish',
+112 silly get     'cache-control': 'max-age=300',
+112 silly get     etag: '"CEF4OOMTVAYSEIL5QNT4SB8FT"',
+112 silly get     age: '234',
+112 silly get     connection: 'keep-alive',
+112 silly get     'x-served-by': 'cache-lax8637-LAX',
+112 silly get     'x-cache': 'HIT',
+112 silly get     'x-cache-hits': '1',
+112 silly get     'x-timer': 'S1477261395.752962,VS0,VE0',
+112 silly get     vary: 'Accept-Encoding' } ]
+113 verbose etag https://registry.npmjs.org/constantinople from cache
+114 verbose get saving constantinople to /home/vagrant/.npm/registry.npmjs.org/constantinople/.cache.json
+115 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+116 silly resolveWithNewModule constantinople@3.0.2 checking installable status
+117 silly cache add args [ 'constantinople@~3.0.1', null ]
+118 verbose cache add spec constantinople@~3.0.1
+119 silly cache add parsed spec Result {
+119 silly cache add   raw: 'constantinople@~3.0.1',
+119 silly cache add   scope: null,
+119 silly cache add   escapedName: 'constantinople',
+119 silly cache add   name: 'constantinople',
+119 silly cache add   rawSpec: '~3.0.1',
+119 silly cache add   spec: '>=3.0.1 <3.1.0',
+119 silly cache add   type: 'range' }
+120 silly addNamed constantinople@>=3.0.1 <3.1.0
+121 verbose addNamed ">=3.0.1 <3.1.0" is a valid semver range for constantinople
+122 silly addNameRange { name: 'constantinople',
+122 silly addNameRange   range: '>=3.0.1 <3.1.0',
+122 silly addNameRange   hasData: false }
+123 silly mapToRegistry name constantinople
+124 silly mapToRegistry using default registry
+125 silly mapToRegistry registry https://registry.npmjs.org/
+126 silly mapToRegistry data Result {
+126 silly mapToRegistry   raw: 'constantinople',
+126 silly mapToRegistry   scope: null,
+126 silly mapToRegistry   escapedName: 'constantinople',
+126 silly mapToRegistry   name: 'constantinople',
+126 silly mapToRegistry   rawSpec: '',
+126 silly mapToRegistry   spec: 'latest',
+126 silly mapToRegistry   type: 'tag' }
+127 silly mapToRegistry uri https://registry.npmjs.org/constantinople
+128 verbose addNameRange registry:https://registry.npmjs.org/constantinople not in flight; fetching
+129 verbose get https://registry.npmjs.org/constantinople not expired, no request
+130 silly addNameRange number 2 { name: 'constantinople',
+130 silly addNameRange   range: '>=3.0.1 <3.1.0',
+130 silly addNameRange   hasData: true }
+131 silly addNameRange versions [ 'constantinople',
+131 silly addNameRange   [ '1.0.0',
+131 silly addNameRange     '1.0.1',
+131 silly addNameRange     '1.0.2',
+131 silly addNameRange     '2.0.0',
+131 silly addNameRange     '2.0.1',
+131 silly addNameRange     '3.0.0',
+131 silly addNameRange     '3.0.1',
+131 silly addNameRange     '3.0.2',
+131 silly addNameRange     '3.1.0' ] ]
+132 silly addNamed constantinople@3.0.2
+133 verbose addNamed "3.0.2" is a plain semver version for constantinople
+134 silly cache afterAdd constantinople@3.0.2
+135 verbose afterAdd /home/vagrant/.npm/constantinople/3.0.2/package/package.json not in flight; writing
+136 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+137 verbose afterAdd /home/vagrant/.npm/constantinople/3.0.2/package/package.json written
+138 silly fetchNamedPackageData acorn
+139 silly mapToRegistry name acorn
+140 silly mapToRegistry using default registry
+141 silly mapToRegistry registry https://registry.npmjs.org/
+142 silly mapToRegistry data Result {
+142 silly mapToRegistry   raw: 'acorn',
+142 silly mapToRegistry   scope: null,
+142 silly mapToRegistry   escapedName: 'acorn',
+142 silly mapToRegistry   name: 'acorn',
+142 silly mapToRegistry   rawSpec: '',
+142 silly mapToRegistry   spec: 'latest',
+142 silly mapToRegistry   type: 'tag' }
+143 silly mapToRegistry uri https://registry.npmjs.org/acorn
+144 verbose request uri https://registry.npmjs.org/acorn
+145 verbose request no auth needed
+146 info attempt registry request try #1 at 10:23:15 PM
+147 verbose etag "DEDA2MYRQHLDJD4VRNJJLJE4W"
+148 http request GET https://registry.npmjs.org/acorn
+149 http 304 https://registry.npmjs.org/acorn
+150 verbose headers { date: 'Sun, 23 Oct 2016 22:23:15 GMT',
+150 verbose headers   via: '1.1 varnish',
+150 verbose headers   'cache-control': 'max-age=300',
+150 verbose headers   etag: '"DEDA2MYRQHLDJD4VRNJJLJE4W"',
+150 verbose headers   age: '64',
+150 verbose headers   connection: 'keep-alive',
+150 verbose headers   'x-served-by': 'cache-lax8637-LAX',
+150 verbose headers   'x-cache': 'HIT',
+150 verbose headers   'x-cache-hits': '1',
+150 verbose headers   'x-timer': 'S1477261395.821839,VS0,VE0',
+150 verbose headers   vary: 'Accept-Encoding' }
+151 silly get cb [ 304,
+151 silly get   { date: 'Sun, 23 Oct 2016 22:23:15 GMT',
+151 silly get     via: '1.1 varnish',
+151 silly get     'cache-control': 'max-age=300',
+151 silly get     etag: '"DEDA2MYRQHLDJD4VRNJJLJE4W"',
+151 silly get     age: '64',
+151 silly get     connection: 'keep-alive',
+151 silly get     'x-served-by': 'cache-lax8637-LAX',
+151 silly get     'x-cache': 'HIT',
+151 silly get     'x-cache-hits': '1',
+151 silly get     'x-timer': 'S1477261395.821839,VS0,VE0',
+151 silly get     vary: 'Accept-Encoding' } ]
+152 verbose etag https://registry.npmjs.org/acorn from cache
+153 verbose get saving acorn to /home/vagrant/.npm/registry.npmjs.org/acorn/.cache.json
+154 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+155 silly resolveWithNewModule acorn@2.7.0 checking installable status
+156 silly cache add args [ 'acorn@^2.1.0', null ]
+157 verbose cache add spec acorn@^2.1.0
+158 silly cache add parsed spec Result {
+158 silly cache add   raw: 'acorn@^2.1.0',
+158 silly cache add   scope: null,
+158 silly cache add   escapedName: 'acorn',
+158 silly cache add   name: 'acorn',
+158 silly cache add   rawSpec: '^2.1.0',
+158 silly cache add   spec: '>=2.1.0 <3.0.0',
+158 silly cache add   type: 'range' }
+159 silly addNamed acorn@>=2.1.0 <3.0.0
+160 verbose addNamed ">=2.1.0 <3.0.0" is a valid semver range for acorn
+161 silly addNameRange { name: 'acorn', range: '>=2.1.0 <3.0.0', hasData: false }
+162 silly mapToRegistry name acorn
+163 silly mapToRegistry using default registry
+164 silly mapToRegistry registry https://registry.npmjs.org/
+165 silly mapToRegistry data Result {
+165 silly mapToRegistry   raw: 'acorn',
+165 silly mapToRegistry   scope: null,
+165 silly mapToRegistry   escapedName: 'acorn',
+165 silly mapToRegistry   name: 'acorn',
+165 silly mapToRegistry   rawSpec: '',
+165 silly mapToRegistry   spec: 'latest',
+165 silly mapToRegistry   type: 'tag' }
+166 silly mapToRegistry uri https://registry.npmjs.org/acorn
+167 verbose addNameRange registry:https://registry.npmjs.org/acorn not in flight; fetching
+168 verbose get https://registry.npmjs.org/acorn not expired, no request
+169 silly addNameRange number 2 { name: 'acorn', range: '>=2.1.0 <3.0.0', hasData: true }
+170 silly addNameRange versions [ 'acorn',
+170 silly addNameRange   [ '0.0.1',
+170 silly addNameRange     '0.1.0',
+170 silly addNameRange     '0.2.0',
+170 silly addNameRange     '0.3.0',
+170 silly addNameRange     '0.3.1',
+170 silly addNameRange     '0.4.0',
+170 silly addNameRange     '0.4.2',
+170 silly addNameRange     '0.5.0',
+170 silly addNameRange     '0.6.0',
+170 silly addNameRange     '0.7.0',
+170 silly addNameRange     '0.8.0',
+170 silly addNameRange     '0.9.0',
+170 silly addNameRange     '0.10.0',
+170 silly addNameRange     '0.11.0',
+170 silly addNameRange     '0.12.0',
+170 silly addNameRange     '1.0.0',
+170 silly addNameRange     '1.0.1',
+170 silly addNameRange     '1.0.3',
+170 silly addNameRange     '1.1.0',
+170 silly addNameRange     '1.2.0',
+170 silly addNameRange     '2.0.0',
+170 silly addNameRange     '1.2.1',
+170 silly addNameRange     '2.0.1',
+170 silly addNameRange     '1.2.2',
+170 silly addNameRange     '2.0.4',
+170 silly addNameRange     '2.1.0',
+170 silly addNameRange     '2.2.0',
+170 silly addNameRange     '2.3.0',
+170 silly addNameRange     '2.4.0',
+170 silly addNameRange     '2.5.0',
+170 silly addNameRange     '2.5.2',
+170 silly addNameRange     '2.6.0',
+170 silly addNameRange     '2.6.2',
+170 silly addNameRange     '2.6.4',
+170 silly addNameRange     '2.7.0',
+170 silly addNameRange     '3.0.0',
+170 silly addNameRange     '3.0.2',
+170 silly addNameRange     '3.0.4',
+170 silly addNameRange     '3.1.0',
+170 silly addNameRange     '3.2.0',
+170 silly addNameRange     '3.3.0',
+170 silly addNameRange     '4.0.0',
+170 silly addNameRange     '4.0.1',
+170 silly addNameRange     '4.0.2',
+170 silly addNameRange     '4.0.3' ] ]
+171 silly addNamed acorn@2.7.0
+172 verbose addNamed "2.7.0" is a plain semver version for acorn
+173 silly cache afterAdd acorn@2.7.0
+174 verbose afterAdd /home/vagrant/.npm/acorn/2.7.0/package/package.json not in flight; writing
+175 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+176 verbose afterAdd /home/vagrant/.npm/acorn/2.7.0/package/package.json written
+177 silly fetchNamedPackageData http-signature
+178 silly mapToRegistry name http-signature
+179 silly mapToRegistry using default registry
+180 silly mapToRegistry registry https://registry.npmjs.org/
+181 silly mapToRegistry data Result {
+181 silly mapToRegistry   raw: 'http-signature',
+181 silly mapToRegistry   scope: null,
+181 silly mapToRegistry   escapedName: 'http-signature',
+181 silly mapToRegistry   name: 'http-signature',
+181 silly mapToRegistry   rawSpec: '',
+181 silly mapToRegistry   spec: 'latest',
+181 silly mapToRegistry   type: 'tag' }
+182 silly mapToRegistry uri https://registry.npmjs.org/http-signature
+183 verbose request uri https://registry.npmjs.org/http-signature
+184 verbose request no auth needed
+185 info attempt registry request try #1 at 10:23:15 PM
+186 verbose etag "AO4A0V3S2MXKLI8XA4ZKKG153"
+187 http request GET https://registry.npmjs.org/http-signature
+188 http 200 https://registry.npmjs.org/http-signature
+189 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+189 verbose headers   etag: '"80EC792ZR5GYE08POF4N7AW6F"',
+189 verbose headers   'content-type': 'application/json',
+189 verbose headers   'content-encoding': 'gzip',
+189 verbose headers   'cache-control': 'max-age=300',
+189 verbose headers   'content-length': '4244',
+189 verbose headers   'accept-ranges': 'bytes',
+189 verbose headers   date: 'Sun, 23 Oct 2016 22:23:15 GMT',
+189 verbose headers   via: '1.1 varnish',
+189 verbose headers   age: '199',
+189 verbose headers   connection: 'keep-alive',
+189 verbose headers   'x-served-by': 'cache-lax8637-LAX',
+189 verbose headers   'x-cache': 'HIT',
+189 verbose headers   'x-cache-hits': '4',
+189 verbose headers   'x-timer': 'S1477261395.960132,VS0,VE0',
+189 verbose headers   vary: 'Accept-Encoding' }
+190 silly get cb [ 200,
+190 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+190 silly get     etag: '"80EC792ZR5GYE08POF4N7AW6F"',
+190 silly get     'content-type': 'application/json',
+190 silly get     'content-encoding': 'gzip',
+190 silly get     'cache-control': 'max-age=300',
+190 silly get     'content-length': '4244',
+190 silly get     'accept-ranges': 'bytes',
+190 silly get     date: 'Sun, 23 Oct 2016 22:23:15 GMT',
+190 silly get     via: '1.1 varnish',
+190 silly get     age: '199',
+190 silly get     connection: 'keep-alive',
+190 silly get     'x-served-by': 'cache-lax8637-LAX',
+190 silly get     'x-cache': 'HIT',
+190 silly get     'x-cache-hits': '4',
+190 silly get     'x-timer': 'S1477261395.960132,VS0,VE0',
+190 silly get     vary: 'Accept-Encoding' } ]
+191 verbose get saving http-signature to /home/vagrant/.npm/registry.npmjs.org/http-signature/.cache.json
+192 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+193 silly resolveWithNewModule http-signature@1.1.1 checking installable status
+194 silly cache add args [ 'http-signature@~1.1.0', null ]
+195 verbose cache add spec http-signature@~1.1.0
+196 silly cache add parsed spec Result {
+196 silly cache add   raw: 'http-signature@~1.1.0',
+196 silly cache add   scope: null,
+196 silly cache add   escapedName: 'http-signature',
+196 silly cache add   name: 'http-signature',
+196 silly cache add   rawSpec: '~1.1.0',
+196 silly cache add   spec: '>=1.1.0 <1.2.0',
+196 silly cache add   type: 'range' }
+197 silly addNamed http-signature@>=1.1.0 <1.2.0
+198 verbose addNamed ">=1.1.0 <1.2.0" is a valid semver range for http-signature
+199 silly addNameRange { name: 'http-signature',
+199 silly addNameRange   range: '>=1.1.0 <1.2.0',
+199 silly addNameRange   hasData: false }
+200 silly mapToRegistry name http-signature
+201 silly mapToRegistry using default registry
+202 silly mapToRegistry registry https://registry.npmjs.org/
+203 silly mapToRegistry data Result {
+203 silly mapToRegistry   raw: 'http-signature',
+203 silly mapToRegistry   scope: null,
+203 silly mapToRegistry   escapedName: 'http-signature',
+203 silly mapToRegistry   name: 'http-signature',
+203 silly mapToRegistry   rawSpec: '',
+203 silly mapToRegistry   spec: 'latest',
+203 silly mapToRegistry   type: 'tag' }
+204 silly mapToRegistry uri https://registry.npmjs.org/http-signature
+205 verbose addNameRange registry:https://registry.npmjs.org/http-signature not in flight; fetching
+206 verbose get https://registry.npmjs.org/http-signature not expired, no request
+207 silly addNameRange number 2 { name: 'http-signature',
+207 silly addNameRange   range: '>=1.1.0 <1.2.0',
+207 silly addNameRange   hasData: true }
+208 silly addNameRange versions [ 'http-signature',
+208 silly addNameRange   [ '0.9.0',
+208 silly addNameRange     '0.9.2',
+208 silly addNameRange     '0.9.3',
+208 silly addNameRange     '0.9.4',
+208 silly addNameRange     '0.9.5',
+208 silly addNameRange     '0.9.6',
+208 silly addNameRange     '0.9.7',
+208 silly addNameRange     '0.9.8',
+208 silly addNameRange     '0.9.9',
+208 silly addNameRange     '0.9.10',
+208 silly addNameRange     '0.9.11',
+208 silly addNameRange     '0.10.0',
+208 silly addNameRange     '0.10.1',
+208 silly addNameRange     '0.11.0',
+208 silly addNameRange     '1.0.0',
+208 silly addNameRange     '1.0.1',
+208 silly addNameRange     '1.0.2',
+208 silly addNameRange     '1.1.0',
+208 silly addNameRange     '1.1.1' ] ]
+209 silly addNamed http-signature@1.1.1
+210 verbose addNamed "1.1.1" is a plain semver version for http-signature
+211 silly cache afterAdd http-signature@1.1.1
+212 verbose afterAdd /home/vagrant/.npm/http-signature/1.1.1/package/package.json not in flight; writing
+213 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+214 verbose afterAdd /home/vagrant/.npm/http-signature/1.1.1/package/package.json written
+215 silly fetchNamedPackageData sshpk
+216 silly mapToRegistry name sshpk
+217 silly mapToRegistry using default registry
+218 silly mapToRegistry registry https://registry.npmjs.org/
+219 silly mapToRegistry data Result {
+219 silly mapToRegistry   raw: 'sshpk',
+219 silly mapToRegistry   scope: null,
+219 silly mapToRegistry   escapedName: 'sshpk',
+219 silly mapToRegistry   name: 'sshpk',
+219 silly mapToRegistry   rawSpec: '',
+219 silly mapToRegistry   spec: 'latest',
+219 silly mapToRegistry   type: 'tag' }
+220 silly mapToRegistry uri https://registry.npmjs.org/sshpk
+221 verbose request uri https://registry.npmjs.org/sshpk
+222 verbose request no auth needed
+223 info attempt registry request try #1 at 10:23:15 PM
+224 verbose etag "1IF436IBYK3S6PFY2JKUO95MJ"
+225 http request GET https://registry.npmjs.org/sshpk
+226 http 304 https://registry.npmjs.org/sshpk
+227 verbose headers { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+227 verbose headers   via: '1.1 varnish',
+227 verbose headers   'cache-control': 'max-age=300',
+227 verbose headers   etag: '"1IF436IBYK3S6PFY2JKUO95MJ"',
+227 verbose headers   age: '289',
+227 verbose headers   connection: 'keep-alive',
+227 verbose headers   'x-served-by': 'cache-lax8637-LAX',
+227 verbose headers   'x-cache': 'HIT',
+227 verbose headers   'x-cache-hits': '2',
+227 verbose headers   'x-timer': 'S1477261396.048242,VS0,VE0',
+227 verbose headers   vary: 'Accept-Encoding' }
+228 silly get cb [ 304,
+228 silly get   { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+228 silly get     via: '1.1 varnish',
+228 silly get     'cache-control': 'max-age=300',
+228 silly get     etag: '"1IF436IBYK3S6PFY2JKUO95MJ"',
+228 silly get     age: '289',
+228 silly get     connection: 'keep-alive',
+228 silly get     'x-served-by': 'cache-lax8637-LAX',
+228 silly get     'x-cache': 'HIT',
+228 silly get     'x-cache-hits': '2',
+228 silly get     'x-timer': 'S1477261396.048242,VS0,VE0',
+228 silly get     vary: 'Accept-Encoding' } ]
+229 verbose etag https://registry.npmjs.org/sshpk from cache
+230 verbose get saving sshpk to /home/vagrant/.npm/registry.npmjs.org/sshpk/.cache.json
+231 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+232 silly resolveWithNewModule sshpk@1.10.1 checking installable status
+233 silly cache add args [ 'sshpk@^1.7.0', null ]
+234 verbose cache add spec sshpk@^1.7.0
+235 silly cache add parsed spec Result {
+235 silly cache add   raw: 'sshpk@^1.7.0',
+235 silly cache add   scope: null,
+235 silly cache add   escapedName: 'sshpk',
+235 silly cache add   name: 'sshpk',
+235 silly cache add   rawSpec: '^1.7.0',
+235 silly cache add   spec: '>=1.7.0 <2.0.0',
+235 silly cache add   type: 'range' }
+236 silly addNamed sshpk@>=1.7.0 <2.0.0
+237 verbose addNamed ">=1.7.0 <2.0.0" is a valid semver range for sshpk
+238 silly addNameRange { name: 'sshpk', range: '>=1.7.0 <2.0.0', hasData: false }
+239 silly mapToRegistry name sshpk
+240 silly mapToRegistry using default registry
+241 silly mapToRegistry registry https://registry.npmjs.org/
+242 silly mapToRegistry data Result {
+242 silly mapToRegistry   raw: 'sshpk',
+242 silly mapToRegistry   scope: null,
+242 silly mapToRegistry   escapedName: 'sshpk',
+242 silly mapToRegistry   name: 'sshpk',
+242 silly mapToRegistry   rawSpec: '',
+242 silly mapToRegistry   spec: 'latest',
+242 silly mapToRegistry   type: 'tag' }
+243 silly mapToRegistry uri https://registry.npmjs.org/sshpk
+244 verbose addNameRange registry:https://registry.npmjs.org/sshpk not in flight; fetching
+245 verbose get https://registry.npmjs.org/sshpk not expired, no request
+246 silly addNameRange number 2 { name: 'sshpk', range: '>=1.7.0 <2.0.0', hasData: true }
+247 silly addNameRange versions [ 'sshpk',
+247 silly addNameRange   [ '1.0.0',
+247 silly addNameRange     '1.0.1',
+247 silly addNameRange     '1.0.2',
+247 silly addNameRange     '1.0.3',
+247 silly addNameRange     '1.0.4',
+247 silly addNameRange     '1.1.0',
+247 silly addNameRange     '1.2.0',
+247 silly addNameRange     '1.2.1',
+247 silly addNameRange     '1.3.0',
+247 silly addNameRange     '1.4.0',
+247 silly addNameRange     '1.4.1',
+247 silly addNameRange     '1.4.2',
+247 silly addNameRange     '1.4.3',
+247 silly addNameRange     '1.4.4',
+247 silly addNameRange     '1.4.5',
+247 silly addNameRange     '1.4.6',
+247 silly addNameRange     '1.4.7',
+247 silly addNameRange     '1.5.0',
+247 silly addNameRange     '1.5.1',
+247 silly addNameRange     '1.6.0',
+247 silly addNameRange     '1.6.1',
+247 silly addNameRange     '1.6.2',
+247 silly addNameRange     '1.7.0',
+247 silly addNameRange     '1.7.1',
+247 silly addNameRange     '1.7.2',
+247 silly addNameRange     '1.7.3',
+247 silly addNameRange     '1.7.4',
+247 silly addNameRange     '1.8.0',
+247 silly addNameRange     '1.8.1',
+247 silly addNameRange     '1.8.2',
+247 silly addNameRange     '1.8.3',
+247 silly addNameRange     '1.9.0',
+247 silly addNameRange     '1.9.1',
+247 silly addNameRange     '1.9.2',
+247 silly addNameRange     '1.10.0',
+247 silly addNameRange     '1.10.1' ] ]
+248 silly addNamed sshpk@1.10.1
+249 verbose addNamed "1.10.1" is a plain semver version for sshpk
+250 silly cache afterAdd sshpk@1.10.1
+251 verbose afterAdd /home/vagrant/.npm/sshpk/1.10.1/package/package.json not in flight; writing
+252 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+253 verbose afterAdd /home/vagrant/.npm/sshpk/1.10.1/package/package.json written
+254 silly fetchNamedPackageData asn1
+255 silly mapToRegistry name asn1
+256 silly mapToRegistry using default registry
+257 silly mapToRegistry registry https://registry.npmjs.org/
+258 silly mapToRegistry data Result {
+258 silly mapToRegistry   raw: 'asn1',
+258 silly mapToRegistry   scope: null,
+258 silly mapToRegistry   escapedName: 'asn1',
+258 silly mapToRegistry   name: 'asn1',
+258 silly mapToRegistry   rawSpec: '',
+258 silly mapToRegistry   spec: 'latest',
+258 silly mapToRegistry   type: 'tag' }
+259 silly mapToRegistry uri https://registry.npmjs.org/asn1
+260 silly fetchNamedPackageData assert-plus
+261 silly mapToRegistry name assert-plus
+262 silly mapToRegistry using default registry
+263 silly mapToRegistry registry https://registry.npmjs.org/
+264 silly mapToRegistry data Result {
+264 silly mapToRegistry   raw: 'assert-plus',
+264 silly mapToRegistry   scope: null,
+264 silly mapToRegistry   escapedName: 'assert-plus',
+264 silly mapToRegistry   name: 'assert-plus',
+264 silly mapToRegistry   rawSpec: '',
+264 silly mapToRegistry   spec: 'latest',
+264 silly mapToRegistry   type: 'tag' }
+265 silly mapToRegistry uri https://registry.npmjs.org/assert-plus
+266 silly fetchNamedPackageData dashdash
+267 silly mapToRegistry name dashdash
+268 silly mapToRegistry using default registry
+269 silly mapToRegistry registry https://registry.npmjs.org/
+270 silly mapToRegistry data Result {
+270 silly mapToRegistry   raw: 'dashdash',
+270 silly mapToRegistry   scope: null,
+270 silly mapToRegistry   escapedName: 'dashdash',
+270 silly mapToRegistry   name: 'dashdash',
+270 silly mapToRegistry   rawSpec: '',
+270 silly mapToRegistry   spec: 'latest',
+270 silly mapToRegistry   type: 'tag' }
+271 silly mapToRegistry uri https://registry.npmjs.org/dashdash
+272 silly fetchNamedPackageData getpass
+273 silly mapToRegistry name getpass
+274 silly mapToRegistry using default registry
+275 silly mapToRegistry registry https://registry.npmjs.org/
+276 silly mapToRegistry data Result {
+276 silly mapToRegistry   raw: 'getpass',
+276 silly mapToRegistry   scope: null,
+276 silly mapToRegistry   escapedName: 'getpass',
+276 silly mapToRegistry   name: 'getpass',
+276 silly mapToRegistry   rawSpec: '',
+276 silly mapToRegistry   spec: 'latest',
+276 silly mapToRegistry   type: 'tag' }
+277 silly mapToRegistry uri https://registry.npmjs.org/getpass
+278 silly fetchNamedPackageData jsbn
+279 silly mapToRegistry name jsbn
+280 silly mapToRegistry using default registry
+281 silly mapToRegistry registry https://registry.npmjs.org/
+282 silly mapToRegistry data Result {
+282 silly mapToRegistry   raw: 'jsbn',
+282 silly mapToRegistry   scope: null,
+282 silly mapToRegistry   escapedName: 'jsbn',
+282 silly mapToRegistry   name: 'jsbn',
+282 silly mapToRegistry   rawSpec: '',
+282 silly mapToRegistry   spec: 'latest',
+282 silly mapToRegistry   type: 'tag' }
+283 silly mapToRegistry uri https://registry.npmjs.org/jsbn
+284 silly fetchNamedPackageData tweetnacl
+285 silly mapToRegistry name tweetnacl
+286 silly mapToRegistry using default registry
+287 silly mapToRegistry registry https://registry.npmjs.org/
+288 silly mapToRegistry data Result {
+288 silly mapToRegistry   raw: 'tweetnacl',
+288 silly mapToRegistry   scope: null,
+288 silly mapToRegistry   escapedName: 'tweetnacl',
+288 silly mapToRegistry   name: 'tweetnacl',
+288 silly mapToRegistry   rawSpec: '',
+288 silly mapToRegistry   spec: 'latest',
+288 silly mapToRegistry   type: 'tag' }
+289 silly mapToRegistry uri https://registry.npmjs.org/tweetnacl
+290 silly fetchNamedPackageData jodid25519
+291 silly mapToRegistry name jodid25519
+292 silly mapToRegistry using default registry
+293 silly mapToRegistry registry https://registry.npmjs.org/
+294 silly mapToRegistry data Result {
+294 silly mapToRegistry   raw: 'jodid25519',
+294 silly mapToRegistry   scope: null,
+294 silly mapToRegistry   escapedName: 'jodid25519',
+294 silly mapToRegistry   name: 'jodid25519',
+294 silly mapToRegistry   rawSpec: '',
+294 silly mapToRegistry   spec: 'latest',
+294 silly mapToRegistry   type: 'tag' }
+295 silly mapToRegistry uri https://registry.npmjs.org/jodid25519
+296 silly fetchNamedPackageData ecc-jsbn
+297 silly mapToRegistry name ecc-jsbn
+298 silly mapToRegistry using default registry
+299 silly mapToRegistry registry https://registry.npmjs.org/
+300 silly mapToRegistry data Result {
+300 silly mapToRegistry   raw: 'ecc-jsbn',
+300 silly mapToRegistry   scope: null,
+300 silly mapToRegistry   escapedName: 'ecc-jsbn',
+300 silly mapToRegistry   name: 'ecc-jsbn',
+300 silly mapToRegistry   rawSpec: '',
+300 silly mapToRegistry   spec: 'latest',
+300 silly mapToRegistry   type: 'tag' }
+301 silly mapToRegistry uri https://registry.npmjs.org/ecc-jsbn
+302 silly fetchNamedPackageData bcrypt-pbkdf
+303 silly mapToRegistry name bcrypt-pbkdf
+304 silly mapToRegistry using default registry
+305 silly mapToRegistry registry https://registry.npmjs.org/
+306 silly mapToRegistry data Result {
+306 silly mapToRegistry   raw: 'bcrypt-pbkdf',
+306 silly mapToRegistry   scope: null,
+306 silly mapToRegistry   escapedName: 'bcrypt-pbkdf',
+306 silly mapToRegistry   name: 'bcrypt-pbkdf',
+306 silly mapToRegistry   rawSpec: '',
+306 silly mapToRegistry   spec: 'latest',
+306 silly mapToRegistry   type: 'tag' }
+307 silly mapToRegistry uri https://registry.npmjs.org/bcrypt-pbkdf
+308 verbose request uri https://registry.npmjs.org/dashdash
+309 verbose request no auth needed
+310 info attempt registry request try #1 at 10:23:16 PM
+311 verbose etag "31Y7A1TWFPCLAI78JB0W80IP6"
+312 http request GET https://registry.npmjs.org/dashdash
+313 verbose request uri https://registry.npmjs.org/assert-plus
+314 verbose request no auth needed
+315 info attempt registry request try #1 at 10:23:16 PM
+316 verbose etag "8G39JD3NMK9BWWNERY83YGGCE"
+317 http request GET https://registry.npmjs.org/assert-plus
+318 verbose request uri https://registry.npmjs.org/asn1
+319 verbose request no auth needed
+320 info attempt registry request try #1 at 10:23:16 PM
+321 verbose etag "8K5D30JGA61DM6SI3K7OVHAJX"
+322 http request GET https://registry.npmjs.org/asn1
+323 verbose request uri https://registry.npmjs.org/getpass
+324 verbose request no auth needed
+325 info attempt registry request try #1 at 10:23:16 PM
+326 verbose etag "ESEWSKCJHTP9QXVUUYJZQXQNC"
+327 http request GET https://registry.npmjs.org/getpass
+328 verbose request uri https://registry.npmjs.org/jsbn
+329 verbose request no auth needed
+330 info attempt registry request try #1 at 10:23:16 PM
+331 verbose etag "DH54Z5K0HC8PO7UN92DR4KRGG"
+332 http request GET https://registry.npmjs.org/jsbn
+333 verbose request uri https://registry.npmjs.org/tweetnacl
+334 verbose request no auth needed
+335 info attempt registry request try #1 at 10:23:16 PM
+336 verbose etag "EZ3Z0OURVM3Q8MGAUROMRBRVK"
+337 http request GET https://registry.npmjs.org/tweetnacl
+338 verbose request uri https://registry.npmjs.org/jodid25519
+339 verbose request no auth needed
+340 info attempt registry request try #1 at 10:23:16 PM
+341 verbose etag "APSI4YRSNGRC822SKKV7D0GGN"
+342 http request GET https://registry.npmjs.org/jodid25519
+343 verbose request uri https://registry.npmjs.org/ecc-jsbn
+344 verbose request no auth needed
+345 info attempt registry request try #1 at 10:23:16 PM
+346 verbose etag "8IPAYE6OVAGXFBN0Q542LZIYT"
+347 http request GET https://registry.npmjs.org/ecc-jsbn
+348 verbose request uri https://registry.npmjs.org/bcrypt-pbkdf
+349 verbose request no auth needed
+350 info attempt registry request try #1 at 10:23:16 PM
+351 verbose etag "9M2935VRJ8W5F72OQ2DJFXYXS"
+352 http request GET https://registry.npmjs.org/bcrypt-pbkdf
+353 http 304 https://registry.npmjs.org/dashdash
+354 verbose headers { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+354 verbose headers   via: '1.1 varnish',
+354 verbose headers   'cache-control': 'max-age=300',
+354 verbose headers   etag: '"31Y7A1TWFPCLAI78JB0W80IP6"',
+354 verbose headers   age: '83',
+354 verbose headers   connection: 'keep-alive',
+354 verbose headers   'x-served-by': 'cache-lax8637-LAX',
+354 verbose headers   'x-cache': 'HIT',
+354 verbose headers   'x-cache-hits': '1',
+354 verbose headers   'x-timer': 'S1477261396.302966,VS0,VE0',
+354 verbose headers   vary: 'Accept-Encoding' }
+355 silly get cb [ 304,
+355 silly get   { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+355 silly get     via: '1.1 varnish',
+355 silly get     'cache-control': 'max-age=300',
+355 silly get     etag: '"31Y7A1TWFPCLAI78JB0W80IP6"',
+355 silly get     age: '83',
+355 silly get     connection: 'keep-alive',
+355 silly get     'x-served-by': 'cache-lax8637-LAX',
+355 silly get     'x-cache': 'HIT',
+355 silly get     'x-cache-hits': '1',
+355 silly get     'x-timer': 'S1477261396.302966,VS0,VE0',
+355 silly get     vary: 'Accept-Encoding' } ]
+356 verbose etag https://registry.npmjs.org/dashdash from cache
+357 verbose get saving dashdash to /home/vagrant/.npm/registry.npmjs.org/dashdash/.cache.json
+358 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+359 http 304 https://registry.npmjs.org/assert-plus
+360 verbose headers { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+360 verbose headers   via: '1.1 varnish',
+360 verbose headers   'cache-control': 'max-age=300',
+360 verbose headers   etag: '"8G39JD3NMK9BWWNERY83YGGCE"',
+360 verbose headers   age: '289',
+360 verbose headers   connection: 'keep-alive',
+360 verbose headers   'x-served-by': 'cache-lax8637-LAX',
+360 verbose headers   'x-cache': 'HIT',
+360 verbose headers   'x-cache-hits': '4',
+360 verbose headers   'x-timer': 'S1477261396.304342,VS0,VE0',
+360 verbose headers   vary: 'Accept-Encoding' }
+361 silly get cb [ 304,
+361 silly get   { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+361 silly get     via: '1.1 varnish',
+361 silly get     'cache-control': 'max-age=300',
+361 silly get     etag: '"8G39JD3NMK9BWWNERY83YGGCE"',
+361 silly get     age: '289',
+361 silly get     connection: 'keep-alive',
+361 silly get     'x-served-by': 'cache-lax8637-LAX',
+361 silly get     'x-cache': 'HIT',
+361 silly get     'x-cache-hits': '4',
+361 silly get     'x-timer': 'S1477261396.304342,VS0,VE0',
+361 silly get     vary: 'Accept-Encoding' } ]
+362 verbose etag https://registry.npmjs.org/assert-plus from cache
+363 verbose get saving assert-plus to /home/vagrant/.npm/registry.npmjs.org/assert-plus/.cache.json
+364 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+365 silly resolveWithNewModule dashdash@1.14.0 checking installable status
+366 silly cache add args [ 'dashdash@^1.12.0', null ]
+367 verbose cache add spec dashdash@^1.12.0
+368 silly cache add parsed spec Result {
+368 silly cache add   raw: 'dashdash@^1.12.0',
+368 silly cache add   scope: null,
+368 silly cache add   escapedName: 'dashdash',
+368 silly cache add   name: 'dashdash',
+368 silly cache add   rawSpec: '^1.12.0',
+368 silly cache add   spec: '>=1.12.0 <2.0.0',
+368 silly cache add   type: 'range' }
+369 silly addNamed dashdash@>=1.12.0 <2.0.0
+370 verbose addNamed ">=1.12.0 <2.0.0" is a valid semver range for dashdash
+371 silly addNameRange { name: 'dashdash', range: '>=1.12.0 <2.0.0', hasData: false }
+372 silly mapToRegistry name dashdash
+373 silly mapToRegistry using default registry
+374 silly mapToRegistry registry https://registry.npmjs.org/
+375 silly mapToRegistry data Result {
+375 silly mapToRegistry   raw: 'dashdash',
+375 silly mapToRegistry   scope: null,
+375 silly mapToRegistry   escapedName: 'dashdash',
+375 silly mapToRegistry   name: 'dashdash',
+375 silly mapToRegistry   rawSpec: '',
+375 silly mapToRegistry   spec: 'latest',
+375 silly mapToRegistry   type: 'tag' }
+376 silly mapToRegistry uri https://registry.npmjs.org/dashdash
+377 verbose addNameRange registry:https://registry.npmjs.org/dashdash not in flight; fetching
+378 silly resolveWithNewModule assert-plus@1.0.0 checking installable status
+379 silly cache add args [ 'assert-plus@^1.0.0', null ]
+380 verbose cache add spec assert-plus@^1.0.0
+381 silly cache add parsed spec Result {
+381 silly cache add   raw: 'assert-plus@^1.0.0',
+381 silly cache add   scope: null,
+381 silly cache add   escapedName: 'assert-plus',
+381 silly cache add   name: 'assert-plus',
+381 silly cache add   rawSpec: '^1.0.0',
+381 silly cache add   spec: '>=1.0.0 <2.0.0',
+381 silly cache add   type: 'range' }
+382 silly addNamed assert-plus@>=1.0.0 <2.0.0
+383 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for assert-plus
+384 silly addNameRange { name: 'assert-plus', range: '>=1.0.0 <2.0.0', hasData: false }
+385 silly mapToRegistry name assert-plus
+386 silly mapToRegistry using default registry
+387 silly mapToRegistry registry https://registry.npmjs.org/
+388 silly mapToRegistry data Result {
+388 silly mapToRegistry   raw: 'assert-plus',
+388 silly mapToRegistry   scope: null,
+388 silly mapToRegistry   escapedName: 'assert-plus',
+388 silly mapToRegistry   name: 'assert-plus',
+388 silly mapToRegistry   rawSpec: '',
+388 silly mapToRegistry   spec: 'latest',
+388 silly mapToRegistry   type: 'tag' }
+389 silly mapToRegistry uri https://registry.npmjs.org/assert-plus
+390 verbose addNameRange registry:https://registry.npmjs.org/assert-plus not in flight; fetching
+391 http 304 https://registry.npmjs.org/asn1
+392 verbose headers { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+392 verbose headers   via: '1.1 varnish',
+392 verbose headers   'cache-control': 'max-age=300',
+392 verbose headers   etag: '"8K5D30JGA61DM6SI3K7OVHAJX"',
+392 verbose headers   age: '288',
+392 verbose headers   connection: 'keep-alive',
+392 verbose headers   'x-served-by': 'cache-lax8647-LAX',
+392 verbose headers   'x-cache': 'HIT',
+392 verbose headers   'x-cache-hits': '2',
+392 verbose headers   'x-timer': 'S1477261396.338990,VS0,VE0',
+392 verbose headers   vary: 'Accept-Encoding' }
+393 silly get cb [ 304,
+393 silly get   { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+393 silly get     via: '1.1 varnish',
+393 silly get     'cache-control': 'max-age=300',
+393 silly get     etag: '"8K5D30JGA61DM6SI3K7OVHAJX"',
+393 silly get     age: '288',
+393 silly get     connection: 'keep-alive',
+393 silly get     'x-served-by': 'cache-lax8647-LAX',
+393 silly get     'x-cache': 'HIT',
+393 silly get     'x-cache-hits': '2',
+393 silly get     'x-timer': 'S1477261396.338990,VS0,VE0',
+393 silly get     vary: 'Accept-Encoding' } ]
+394 verbose etag https://registry.npmjs.org/asn1 from cache
+395 verbose get saving asn1 to /home/vagrant/.npm/registry.npmjs.org/asn1/.cache.json
+396 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+397 http 304 https://registry.npmjs.org/jodid25519
+398 verbose headers { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+398 verbose headers   via: '1.1 varnish',
+398 verbose headers   'cache-control': 'max-age=300',
+398 verbose headers   etag: '"APSI4YRSNGRC822SKKV7D0GGN"',
+398 verbose headers   age: '120',
+398 verbose headers   connection: 'keep-alive',
+398 verbose headers   'x-served-by': 'cache-lax8640-LAX',
+398 verbose headers   'x-cache': 'HIT',
+398 verbose headers   'x-cache-hits': '2',
+398 verbose headers   'x-timer': 'S1477261396.366240,VS0,VE0',
+398 verbose headers   vary: 'Accept-Encoding' }
+399 silly get cb [ 304,
+399 silly get   { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+399 silly get     via: '1.1 varnish',
+399 silly get     'cache-control': 'max-age=300',
+399 silly get     etag: '"APSI4YRSNGRC822SKKV7D0GGN"',
+399 silly get     age: '120',
+399 silly get     connection: 'keep-alive',
+399 silly get     'x-served-by': 'cache-lax8640-LAX',
+399 silly get     'x-cache': 'HIT',
+399 silly get     'x-cache-hits': '2',
+399 silly get     'x-timer': 'S1477261396.366240,VS0,VE0',
+399 silly get     vary: 'Accept-Encoding' } ]
+400 verbose etag https://registry.npmjs.org/jodid25519 from cache
+401 verbose get saving jodid25519 to /home/vagrant/.npm/registry.npmjs.org/jodid25519/.cache.json
+402 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+403 http 304 https://registry.npmjs.org/ecc-jsbn
+404 verbose headers { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+404 verbose headers   via: '1.1 varnish',
+404 verbose headers   'cache-control': 'max-age=300',
+404 verbose headers   etag: '"8IPAYE6OVAGXFBN0Q542LZIYT"',
+404 verbose headers   age: '121',
+404 verbose headers   connection: 'keep-alive',
+404 verbose headers   'x-served-by': 'cache-lax8632-LAX',
+404 verbose headers   'x-cache': 'HIT',
+404 verbose headers   'x-cache-hits': '1',
+404 verbose headers   'x-timer': 'S1477261396.365784,VS0,VE0',
+404 verbose headers   vary: 'Accept-Encoding' }
+405 silly get cb [ 304,
+405 silly get   { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+405 silly get     via: '1.1 varnish',
+405 silly get     'cache-control': 'max-age=300',
+405 silly get     etag: '"8IPAYE6OVAGXFBN0Q542LZIYT"',
+405 silly get     age: '121',
+405 silly get     connection: 'keep-alive',
+405 silly get     'x-served-by': 'cache-lax8632-LAX',
+405 silly get     'x-cache': 'HIT',
+405 silly get     'x-cache-hits': '1',
+405 silly get     'x-timer': 'S1477261396.365784,VS0,VE0',
+405 silly get     vary: 'Accept-Encoding' } ]
+406 verbose etag https://registry.npmjs.org/ecc-jsbn from cache
+407 verbose get saving ecc-jsbn to /home/vagrant/.npm/registry.npmjs.org/ecc-jsbn/.cache.json
+408 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+409 http 304 https://registry.npmjs.org/getpass
+410 verbose headers { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+410 verbose headers   via: '1.1 varnish',
+410 verbose headers   'cache-control': 'max-age=300',
+410 verbose headers   etag: '"ESEWSKCJHTP9QXVUUYJZQXQNC"',
+410 verbose headers   age: '288',
+410 verbose headers   connection: 'keep-alive',
+410 verbose headers   'x-served-by': 'cache-lax8635-LAX',
+410 verbose headers   'x-cache': 'HIT',
+410 verbose headers   'x-cache-hits': '2',
+410 verbose headers   'x-timer': 'S1477261396.365343,VS0,VE0',
+410 verbose headers   vary: 'Accept-Encoding' }
+411 silly get cb [ 304,
+411 silly get   { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+411 silly get     via: '1.1 varnish',
+411 silly get     'cache-control': 'max-age=300',
+411 silly get     etag: '"ESEWSKCJHTP9QXVUUYJZQXQNC"',
+411 silly get     age: '288',
+411 silly get     connection: 'keep-alive',
+411 silly get     'x-served-by': 'cache-lax8635-LAX',
+411 silly get     'x-cache': 'HIT',
+411 silly get     'x-cache-hits': '2',
+411 silly get     'x-timer': 'S1477261396.365343,VS0,VE0',
+411 silly get     vary: 'Accept-Encoding' } ]
+412 verbose etag https://registry.npmjs.org/getpass from cache
+413 verbose get saving getpass to /home/vagrant/.npm/registry.npmjs.org/getpass/.cache.json
+414 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+415 http 304 https://registry.npmjs.org/jsbn
+416 verbose headers { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+416 verbose headers   via: '1.1 varnish',
+416 verbose headers   'cache-control': 'max-age=300',
+416 verbose headers   etag: '"DH54Z5K0HC8PO7UN92DR4KRGG"',
+416 verbose headers   age: '107',
+416 verbose headers   connection: 'keep-alive',
+416 verbose headers   'x-served-by': 'cache-lax8620-LAX',
+416 verbose headers   'x-cache': 'HIT',
+416 verbose headers   'x-cache-hits': '2',
+416 verbose headers   'x-timer': 'S1477261396.367841,VS0,VE0',
+416 verbose headers   vary: 'Accept-Encoding' }
+417 silly get cb [ 304,
+417 silly get   { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+417 silly get     via: '1.1 varnish',
+417 silly get     'cache-control': 'max-age=300',
+417 silly get     etag: '"DH54Z5K0HC8PO7UN92DR4KRGG"',
+417 silly get     age: '107',
+417 silly get     connection: 'keep-alive',
+417 silly get     'x-served-by': 'cache-lax8620-LAX',
+417 silly get     'x-cache': 'HIT',
+417 silly get     'x-cache-hits': '2',
+417 silly get     'x-timer': 'S1477261396.367841,VS0,VE0',
+417 silly get     vary: 'Accept-Encoding' } ]
+418 verbose etag https://registry.npmjs.org/jsbn from cache
+419 verbose get saving jsbn to /home/vagrant/.npm/registry.npmjs.org/jsbn/.cache.json
+420 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+421 http 304 https://registry.npmjs.org/tweetnacl
+422 verbose headers { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+422 verbose headers   via: '1.1 varnish',
+422 verbose headers   'cache-control': 'max-age=300',
+422 verbose headers   etag: '"EZ3Z0OURVM3Q8MGAUROMRBRVK"',
+422 verbose headers   age: '83',
+422 verbose headers   connection: 'keep-alive',
+422 verbose headers   'x-served-by': 'cache-lax8637-LAX',
+422 verbose headers   'x-cache': 'HIT',
+422 verbose headers   'x-cache-hits': '1',
+422 verbose headers   'x-timer': 'S1477261396.371717,VS0,VE0',
+422 verbose headers   vary: 'Accept-Encoding' }
+423 silly get cb [ 304,
+423 silly get   { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+423 silly get     via: '1.1 varnish',
+423 silly get     'cache-control': 'max-age=300',
+423 silly get     etag: '"EZ3Z0OURVM3Q8MGAUROMRBRVK"',
+423 silly get     age: '83',
+423 silly get     connection: 'keep-alive',
+423 silly get     'x-served-by': 'cache-lax8637-LAX',
+423 silly get     'x-cache': 'HIT',
+423 silly get     'x-cache-hits': '1',
+423 silly get     'x-timer': 'S1477261396.371717,VS0,VE0',
+423 silly get     vary: 'Accept-Encoding' } ]
+424 verbose etag https://registry.npmjs.org/tweetnacl from cache
+425 verbose get saving tweetnacl to /home/vagrant/.npm/registry.npmjs.org/tweetnacl/.cache.json
+426 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+427 http 304 https://registry.npmjs.org/bcrypt-pbkdf
+428 verbose headers { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+428 verbose headers   via: '1.1 varnish',
+428 verbose headers   'cache-control': 'max-age=300',
+428 verbose headers   etag: '"9M2935VRJ8W5F72OQ2DJFXYXS"',
+428 verbose headers   age: '107',
+428 verbose headers   connection: 'keep-alive',
+428 verbose headers   'x-served-by': 'cache-lax8628-LAX',
+428 verbose headers   'x-cache': 'HIT',
+428 verbose headers   'x-cache-hits': '1',
+428 verbose headers   'x-timer': 'S1477261396.374177,VS0,VE0',
+428 verbose headers   vary: 'Accept-Encoding' }
+429 silly get cb [ 304,
+429 silly get   { date: 'Sun, 23 Oct 2016 22:23:16 GMT',
+429 silly get     via: '1.1 varnish',
+429 silly get     'cache-control': 'max-age=300',
+429 silly get     etag: '"9M2935VRJ8W5F72OQ2DJFXYXS"',
+429 silly get     age: '107',
+429 silly get     connection: 'keep-alive',
+429 silly get     'x-served-by': 'cache-lax8628-LAX',
+429 silly get     'x-cache': 'HIT',
+429 silly get     'x-cache-hits': '1',
+429 silly get     'x-timer': 'S1477261396.374177,VS0,VE0',
+429 silly get     vary: 'Accept-Encoding' } ]
+430 verbose etag https://registry.npmjs.org/bcrypt-pbkdf from cache
+431 verbose get saving bcrypt-pbkdf to /home/vagrant/.npm/registry.npmjs.org/bcrypt-pbkdf/.cache.json
+432 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+433 verbose get https://registry.npmjs.org/dashdash not expired, no request
+434 silly addNameRange number 2 { name: 'dashdash', range: '>=1.12.0 <2.0.0', hasData: true }
+435 silly addNameRange versions [ 'dashdash',
+435 silly addNameRange   [ '1.0.0',
+435 silly addNameRange     '1.0.1',
+435 silly addNameRange     '1.0.2',
+435 silly addNameRange     '1.1.0',
+435 silly addNameRange     '1.2.0',
+435 silly addNameRange     '1.2.1',
+435 silly addNameRange     '1.3.0',
+435 silly addNameRange     '1.3.1',
+435 silly addNameRange     '1.3.2',
+435 silly addNameRange     '1.4.0',
+435 silly addNameRange     '1.5.0',
+435 silly addNameRange     '1.6.0',
+435 silly addNameRange     '1.7.0',
+435 silly addNameRange     '1.7.1',
+435 silly addNameRange     '1.7.2',
+435 silly addNameRange     '1.7.3',
+435 silly addNameRange     '1.8.0',
+435 silly addNameRange     '1.9.0',
+435 silly addNameRange     '1.10.0',
+435 silly addNameRange     '1.10.1',
+435 silly addNameRange     '1.11.0',
+435 silly addNameRange     '1.12.0',
+435 silly addNameRange     '1.12.1',
+435 silly addNameRange     '1.12.2',
+435 silly addNameRange     '1.13.0',
+435 silly addNameRange     '1.13.1',
+435 silly addNameRange     '1.14.0' ] ]
+436 silly addNamed dashdash@1.14.0
+437 verbose addNamed "1.14.0" is a plain semver version for dashdash
+438 verbose get https://registry.npmjs.org/assert-plus not expired, no request
+439 silly addNameRange number 2 { name: 'assert-plus', range: '>=1.0.0 <2.0.0', hasData: true }
+440 silly addNameRange versions [ 'assert-plus',
+440 silly addNameRange   [ '0.1.0',
+440 silly addNameRange     '0.1.1',
+440 silly addNameRange     '0.1.2',
+440 silly addNameRange     '0.1.3',
+440 silly addNameRange     '0.1.4',
+440 silly addNameRange     '0.1.5',
+440 silly addNameRange     '0.2.0',
+440 silly addNameRange     '1.0.0' ] ]
+441 silly addNamed assert-plus@1.0.0
+442 verbose addNamed "1.0.0" is a plain semver version for assert-plus
+443 silly cache afterAdd dashdash@1.14.0
+444 verbose afterAdd /home/vagrant/.npm/dashdash/1.14.0/package/package.json not in flight; writing
+445 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+446 silly resolveWithNewModule asn1@0.2.3 checking installable status
+447 silly cache add args [ 'asn1@~0.2.3', null ]
+448 verbose cache add spec asn1@~0.2.3
+449 silly cache add parsed spec Result {
+449 silly cache add   raw: 'asn1@~0.2.3',
+449 silly cache add   scope: null,
+449 silly cache add   escapedName: 'asn1',
+449 silly cache add   name: 'asn1',
+449 silly cache add   rawSpec: '~0.2.3',
+449 silly cache add   spec: '>=0.2.3 <0.3.0',
+449 silly cache add   type: 'range' }
+450 silly addNamed asn1@>=0.2.3 <0.3.0
+451 verbose addNamed ">=0.2.3 <0.3.0" is a valid semver range for asn1
+452 silly addNameRange { name: 'asn1', range: '>=0.2.3 <0.3.0', hasData: false }
+453 silly mapToRegistry name asn1
+454 silly mapToRegistry using default registry
+455 silly mapToRegistry registry https://registry.npmjs.org/
+456 silly mapToRegistry data Result {
+456 silly mapToRegistry   raw: 'asn1',
+456 silly mapToRegistry   scope: null,
+456 silly mapToRegistry   escapedName: 'asn1',
+456 silly mapToRegistry   name: 'asn1',
+456 silly mapToRegistry   rawSpec: '',
+456 silly mapToRegistry   spec: 'latest',
+456 silly mapToRegistry   type: 'tag' }
+457 silly mapToRegistry uri https://registry.npmjs.org/asn1
+458 verbose addNameRange registry:https://registry.npmjs.org/asn1 not in flight; fetching
+459 silly cache afterAdd assert-plus@1.0.0
+460 verbose afterAdd /home/vagrant/.npm/assert-plus/1.0.0/package/package.json not in flight; writing
+461 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+462 silly resolveWithNewModule jodid25519@1.0.2 checking installable status
+463 silly cache add args [ 'jodid25519@^1.0.0', null ]
+464 verbose cache add spec jodid25519@^1.0.0
+465 silly cache add parsed spec Result {
+465 silly cache add   raw: 'jodid25519@^1.0.0',
+465 silly cache add   scope: null,
+465 silly cache add   escapedName: 'jodid25519',
+465 silly cache add   name: 'jodid25519',
+465 silly cache add   rawSpec: '^1.0.0',
+465 silly cache add   spec: '>=1.0.0 <2.0.0',
+465 silly cache add   type: 'range' }
+466 silly addNamed jodid25519@>=1.0.0 <2.0.0
+467 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for jodid25519
+468 silly addNameRange { name: 'jodid25519', range: '>=1.0.0 <2.0.0', hasData: false }
+469 silly mapToRegistry name jodid25519
+470 silly mapToRegistry using default registry
+471 silly mapToRegistry registry https://registry.npmjs.org/
+472 silly mapToRegistry data Result {
+472 silly mapToRegistry   raw: 'jodid25519',
+472 silly mapToRegistry   scope: null,
+472 silly mapToRegistry   escapedName: 'jodid25519',
+472 silly mapToRegistry   name: 'jodid25519',
+472 silly mapToRegistry   rawSpec: '',
+472 silly mapToRegistry   spec: 'latest',
+472 silly mapToRegistry   type: 'tag' }
+473 silly mapToRegistry uri https://registry.npmjs.org/jodid25519
+474 verbose addNameRange registry:https://registry.npmjs.org/jodid25519 not in flight; fetching
+475 silly resolveWithNewModule ecc-jsbn@0.1.1 checking installable status
+476 silly cache add args [ 'ecc-jsbn@~0.1.1', null ]
+477 verbose cache add spec ecc-jsbn@~0.1.1
+478 silly cache add parsed spec Result {
+478 silly cache add   raw: 'ecc-jsbn@~0.1.1',
+478 silly cache add   scope: null,
+478 silly cache add   escapedName: 'ecc-jsbn',
+478 silly cache add   name: 'ecc-jsbn',
+478 silly cache add   rawSpec: '~0.1.1',
+478 silly cache add   spec: '>=0.1.1 <0.2.0',
+478 silly cache add   type: 'range' }
+479 silly addNamed ecc-jsbn@>=0.1.1 <0.2.0
+480 verbose addNamed ">=0.1.1 <0.2.0" is a valid semver range for ecc-jsbn
+481 silly addNameRange { name: 'ecc-jsbn', range: '>=0.1.1 <0.2.0', hasData: false }
+482 silly mapToRegistry name ecc-jsbn
+483 silly mapToRegistry using default registry
+484 silly mapToRegistry registry https://registry.npmjs.org/
+485 silly mapToRegistry data Result {
+485 silly mapToRegistry   raw: 'ecc-jsbn',
+485 silly mapToRegistry   scope: null,
+485 silly mapToRegistry   escapedName: 'ecc-jsbn',
+485 silly mapToRegistry   name: 'ecc-jsbn',
+485 silly mapToRegistry   rawSpec: '',
+485 silly mapToRegistry   spec: 'latest',
+485 silly mapToRegistry   type: 'tag' }
+486 silly mapToRegistry uri https://registry.npmjs.org/ecc-jsbn
+487 verbose addNameRange registry:https://registry.npmjs.org/ecc-jsbn not in flight; fetching
+488 silly resolveWithNewModule getpass@0.1.6 checking installable status
+489 silly cache add args [ 'getpass@^0.1.1', null ]
+490 verbose cache add spec getpass@^0.1.1
+491 silly cache add parsed spec Result {
+491 silly cache add   raw: 'getpass@^0.1.1',
+491 silly cache add   scope: null,
+491 silly cache add   escapedName: 'getpass',
+491 silly cache add   name: 'getpass',
+491 silly cache add   rawSpec: '^0.1.1',
+491 silly cache add   spec: '>=0.1.1 <0.2.0',
+491 silly cache add   type: 'range' }
+492 silly addNamed getpass@>=0.1.1 <0.2.0
+493 verbose addNamed ">=0.1.1 <0.2.0" is a valid semver range for getpass
+494 silly addNameRange { name: 'getpass', range: '>=0.1.1 <0.2.0', hasData: false }
+495 silly mapToRegistry name getpass
+496 silly mapToRegistry using default registry
+497 silly mapToRegistry registry https://registry.npmjs.org/
+498 silly mapToRegistry data Result {
+498 silly mapToRegistry   raw: 'getpass',
+498 silly mapToRegistry   scope: null,
+498 silly mapToRegistry   escapedName: 'getpass',
+498 silly mapToRegistry   name: 'getpass',
+498 silly mapToRegistry   rawSpec: '',
+498 silly mapToRegistry   spec: 'latest',
+498 silly mapToRegistry   type: 'tag' }
+499 silly mapToRegistry uri https://registry.npmjs.org/getpass
+500 verbose addNameRange registry:https://registry.npmjs.org/getpass not in flight; fetching
+501 silly resolveWithNewModule jsbn@0.1.0 checking installable status
+502 silly cache add args [ 'jsbn@~0.1.0', null ]
+503 verbose cache add spec jsbn@~0.1.0
+504 silly cache add parsed spec Result {
+504 silly cache add   raw: 'jsbn@~0.1.0',
+504 silly cache add   scope: null,
+504 silly cache add   escapedName: 'jsbn',
+504 silly cache add   name: 'jsbn',
+504 silly cache add   rawSpec: '~0.1.0',
+504 silly cache add   spec: '>=0.1.0 <0.2.0',
+504 silly cache add   type: 'range' }
+505 silly addNamed jsbn@>=0.1.0 <0.2.0
+506 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for jsbn
+507 silly addNameRange { name: 'jsbn', range: '>=0.1.0 <0.2.0', hasData: false }
+508 silly mapToRegistry name jsbn
+509 silly mapToRegistry using default registry
+510 silly mapToRegistry registry https://registry.npmjs.org/
+511 silly mapToRegistry data Result {
+511 silly mapToRegistry   raw: 'jsbn',
+511 silly mapToRegistry   scope: null,
+511 silly mapToRegistry   escapedName: 'jsbn',
+511 silly mapToRegistry   name: 'jsbn',
+511 silly mapToRegistry   rawSpec: '',
+511 silly mapToRegistry   spec: 'latest',
+511 silly mapToRegistry   type: 'tag' }
+512 silly mapToRegistry uri https://registry.npmjs.org/jsbn
+513 verbose addNameRange registry:https://registry.npmjs.org/jsbn not in flight; fetching
+514 silly resolveWithNewModule tweetnacl@0.14.3 checking installable status
+515 silly cache add args [ 'tweetnacl@~0.14.0', null ]
+516 verbose cache add spec tweetnacl@~0.14.0
+517 silly cache add parsed spec Result {
+517 silly cache add   raw: 'tweetnacl@~0.14.0',
+517 silly cache add   scope: null,
+517 silly cache add   escapedName: 'tweetnacl',
+517 silly cache add   name: 'tweetnacl',
+517 silly cache add   rawSpec: '~0.14.0',
+517 silly cache add   spec: '>=0.14.0 <0.15.0',
+517 silly cache add   type: 'range' }
+518 silly addNamed tweetnacl@>=0.14.0 <0.15.0
+519 verbose addNamed ">=0.14.0 <0.15.0" is a valid semver range for tweetnacl
+520 silly addNameRange { name: 'tweetnacl', range: '>=0.14.0 <0.15.0', hasData: false }
+521 silly mapToRegistry name tweetnacl
+522 silly mapToRegistry using default registry
+523 silly mapToRegistry registry https://registry.npmjs.org/
+524 silly mapToRegistry data Result {
+524 silly mapToRegistry   raw: 'tweetnacl',
+524 silly mapToRegistry   scope: null,
+524 silly mapToRegistry   escapedName: 'tweetnacl',
+524 silly mapToRegistry   name: 'tweetnacl',
+524 silly mapToRegistry   rawSpec: '',
+524 silly mapToRegistry   spec: 'latest',
+524 silly mapToRegistry   type: 'tag' }
+525 silly mapToRegistry uri https://registry.npmjs.org/tweetnacl
+526 verbose addNameRange registry:https://registry.npmjs.org/tweetnacl not in flight; fetching
+527 silly resolveWithNewModule bcrypt-pbkdf@1.0.0 checking installable status
+528 silly cache add args [ 'bcrypt-pbkdf@^1.0.0', null ]
+529 verbose cache add spec bcrypt-pbkdf@^1.0.0
+530 silly cache add parsed spec Result {
+530 silly cache add   raw: 'bcrypt-pbkdf@^1.0.0',
+530 silly cache add   scope: null,
+530 silly cache add   escapedName: 'bcrypt-pbkdf',
+530 silly cache add   name: 'bcrypt-pbkdf',
+530 silly cache add   rawSpec: '^1.0.0',
+530 silly cache add   spec: '>=1.0.0 <2.0.0',
+530 silly cache add   type: 'range' }
+531 silly addNamed bcrypt-pbkdf@>=1.0.0 <2.0.0
+532 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for bcrypt-pbkdf
+533 silly addNameRange { name: 'bcrypt-pbkdf', range: '>=1.0.0 <2.0.0', hasData: false }
+534 silly mapToRegistry name bcrypt-pbkdf
+535 silly mapToRegistry using default registry
+536 silly mapToRegistry registry https://registry.npmjs.org/
+537 silly mapToRegistry data Result {
+537 silly mapToRegistry   raw: 'bcrypt-pbkdf',
+537 silly mapToRegistry   scope: null,
+537 silly mapToRegistry   escapedName: 'bcrypt-pbkdf',
+537 silly mapToRegistry   name: 'bcrypt-pbkdf',
+537 silly mapToRegistry   rawSpec: '',
+537 silly mapToRegistry   spec: 'latest',
+537 silly mapToRegistry   type: 'tag' }
+538 silly mapToRegistry uri https://registry.npmjs.org/bcrypt-pbkdf
+539 verbose addNameRange registry:https://registry.npmjs.org/bcrypt-pbkdf not in flight; fetching
+540 verbose get https://registry.npmjs.org/asn1 not expired, no request
+541 silly addNameRange number 2 { name: 'asn1', range: '>=0.2.3 <0.3.0', hasData: true }
+542 silly addNameRange versions [ 'asn1',
+542 silly addNameRange   [ '0.1.0',
+542 silly addNameRange     '0.1.1',
+542 silly addNameRange     '0.1.2',
+542 silly addNameRange     '0.1.3',
+542 silly addNameRange     '0.1.4',
+542 silly addNameRange     '0.1.5',
+542 silly addNameRange     '0.1.6',
+542 silly addNameRange     '0.1.7',
+542 silly addNameRange     '0.1.8',
+542 silly addNameRange     '0.1.9',
+542 silly addNameRange     '0.1.10',
+542 silly addNameRange     '0.1.11',
+542 silly addNameRange     '0.2.0',
+542 silly addNameRange     '0.2.1',
+542 silly addNameRange     '0.2.2',
+542 silly addNameRange     '0.2.3' ] ]
+543 silly addNamed asn1@0.2.3
+544 verbose addNamed "0.2.3" is a plain semver version for asn1
+545 verbose get https://registry.npmjs.org/jodid25519 not expired, no request
+546 silly addNameRange number 2 { name: 'jodid25519', range: '>=1.0.0 <2.0.0', hasData: true }
+547 silly addNameRange versions [ 'jodid25519', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+548 silly addNamed jodid25519@1.0.2
+549 verbose addNamed "1.0.2" is a plain semver version for jodid25519
+550 verbose get https://registry.npmjs.org/ecc-jsbn not expired, no request
+551 silly addNameRange number 2 { name: 'ecc-jsbn', range: '>=0.1.1 <0.2.0', hasData: true }
+552 silly addNameRange versions [ 'ecc-jsbn', [ '0.0.1', '0.1.1' ] ]
+553 silly addNamed ecc-jsbn@0.1.1
+554 verbose addNamed "0.1.1" is a plain semver version for ecc-jsbn
+555 verbose get https://registry.npmjs.org/getpass not expired, no request
+556 silly addNameRange number 2 { name: 'getpass', range: '>=0.1.1 <0.2.0', hasData: true }
+557 silly addNameRange versions [ 'getpass',
+557 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.1.5', '0.1.6' ] ]
+558 silly addNamed getpass@0.1.6
+559 verbose addNamed "0.1.6" is a plain semver version for getpass
+560 verbose afterAdd /home/vagrant/.npm/dashdash/1.14.0/package/package.json written
+561 verbose afterAdd /home/vagrant/.npm/assert-plus/1.0.0/package/package.json written
+562 verbose get https://registry.npmjs.org/jsbn not expired, no request
+563 silly addNameRange number 2 { name: 'jsbn', range: '>=0.1.0 <0.2.0', hasData: true }
+564 silly addNameRange versions [ 'jsbn', [ '0.0.0', '0.1.0' ] ]
+565 silly addNamed jsbn@0.1.0
+566 verbose addNamed "0.1.0" is a plain semver version for jsbn
+567 verbose get https://registry.npmjs.org/tweetnacl not expired, no request
+568 silly addNameRange number 2 { name: 'tweetnacl', range: '>=0.14.0 <0.15.0', hasData: true }
+569 silly addNameRange versions [ 'tweetnacl',
+569 silly addNameRange   [ '0.9.1',
+569 silly addNameRange     '0.9.2',
+569 silly addNameRange     '0.10.0',
+569 silly addNameRange     '0.10.1',
+569 silly addNameRange     '0.11.0',
+569 silly addNameRange     '0.11.1',
+569 silly addNameRange     '0.11.2',
+569 silly addNameRange     '0.12.0',
+569 silly addNameRange     '0.12.1',
+569 silly addNameRange     '0.12.2',
+569 silly addNameRange     '0.13.0',
+569 silly addNameRange     '0.13.1',
+569 silly addNameRange     '0.13.2',
+569 silly addNameRange     '0.13.3',
+569 silly addNameRange     '0.14.0',
+569 silly addNameRange     '0.14.1',
+569 silly addNameRange     '0.14.2',
+569 silly addNameRange     '0.14.3' ] ]
+570 silly addNamed tweetnacl@0.14.3
+571 verbose addNamed "0.14.3" is a plain semver version for tweetnacl
+572 verbose get https://registry.npmjs.org/bcrypt-pbkdf not expired, no request
+573 silly addNameRange number 2 { name: 'bcrypt-pbkdf', range: '>=1.0.0 <2.0.0', hasData: true }
+574 silly addNameRange versions [ 'bcrypt-pbkdf', [ '1.0.0' ] ]
+575 silly addNamed bcrypt-pbkdf@1.0.0
+576 verbose addNamed "1.0.0" is a plain semver version for bcrypt-pbkdf
+577 silly cache afterAdd asn1@0.2.3
+578 verbose afterAdd /home/vagrant/.npm/asn1/0.2.3/package/package.json not in flight; writing
+579 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+580 silly cache afterAdd jodid25519@1.0.2
+581 verbose afterAdd /home/vagrant/.npm/jodid25519/1.0.2/package/package.json not in flight; writing
+582 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+583 silly cache afterAdd ecc-jsbn@0.1.1
+584 verbose afterAdd /home/vagrant/.npm/ecc-jsbn/0.1.1/package/package.json not in flight; writing
+585 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+586 silly cache afterAdd getpass@0.1.6
+587 verbose afterAdd /home/vagrant/.npm/getpass/0.1.6/package/package.json not in flight; writing
+588 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+589 silly cache afterAdd jsbn@0.1.0
+590 verbose afterAdd /home/vagrant/.npm/jsbn/0.1.0/package/package.json not in flight; writing
+591 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+592 silly cache afterAdd tweetnacl@0.14.3
+593 verbose afterAdd /home/vagrant/.npm/tweetnacl/0.14.3/package/package.json not in flight; writing
+594 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+595 silly cache afterAdd bcrypt-pbkdf@1.0.0
+596 verbose afterAdd /home/vagrant/.npm/bcrypt-pbkdf/1.0.0/package/package.json not in flight; writing
+597 verbose correctMkdir /home/vagrant/.npm correctMkdir not in flight; initializing
+598 verbose afterAdd /home/vagrant/.npm/asn1/0.2.3/package/package.json written
+599 verbose afterAdd /home/vagrant/.npm/jodid25519/1.0.2/package/package.json written
+600 verbose afterAdd /home/vagrant/.npm/ecc-jsbn/0.1.1/package/package.json written
+601 verbose afterAdd /home/vagrant/.npm/getpass/0.1.6/package/package.json written
+602 verbose afterAdd /home/vagrant/.npm/jsbn/0.1.0/package/package.json written
+603 verbose afterAdd /home/vagrant/.npm/tweetnacl/0.14.3/package/package.json written
+604 verbose afterAdd /home/vagrant/.npm/bcrypt-pbkdf/1.0.0/package/package.json written
+605 silly fetchNamedPackageData assert-plus
+606 silly mapToRegistry name assert-plus
+607 silly mapToRegistry using default registry
+608 silly mapToRegistry registry https://registry.npmjs.org/
+609 silly mapToRegistry data Result {
+609 silly mapToRegistry   raw: 'assert-plus',
+609 silly mapToRegistry   scope: null,
+609 silly mapToRegistry   escapedName: 'assert-plus',
+609 silly mapToRegistry   name: 'assert-plus',
+609 silly mapToRegistry   rawSpec: '',
+609 silly mapToRegistry   spec: 'latest',
+609 silly mapToRegistry   type: 'tag' }
+610 silly mapToRegistry uri https://registry.npmjs.org/assert-plus
+611 silly resolveWithNewModule assert-plus@1.0.0 checking installable status
+612 silly fetchNamedPackageData assert-plus
+613 silly mapToRegistry name assert-plus
+614 silly mapToRegistry using default registry
+615 silly mapToRegistry registry https://registry.npmjs.org/
+616 silly mapToRegistry data Result {
+616 silly mapToRegistry   raw: 'assert-plus',
+616 silly mapToRegistry   scope: null,
+616 silly mapToRegistry   escapedName: 'assert-plus',
+616 silly mapToRegistry   name: 'assert-plus',
+616 silly mapToRegistry   rawSpec: '',
+616 silly mapToRegistry   spec: 'latest',
+616 silly mapToRegistry   type: 'tag' }
+617 silly mapToRegistry uri https://registry.npmjs.org/assert-plus
+618 silly resolveWithNewModule assert-plus@1.0.0 checking installable status
+619 silly loadAllDepsIntoIdealTree Finishing
+620 silly loadIdealTree Finishing
+621 silly currentTree Watch-This-Movie@0.0.0
+621 silly currentTree ├── accepts@1.2.13
+621 silly currentTree ├── acorn-globals@1.0.9
+621 silly currentTree ├── align-text@0.1.4
+621 silly currentTree ├── amdefine@1.0.0
+621 silly currentTree ├── ansi-regex@2.0.0
+621 silly currentTree ├── ansi-styles@2.2.1
+621 silly currentTree ├── array-flatten@1.1.1
+621 silly currentTree ├── asap@1.0.0
+621 silly currentTree ├── assert-plus@0.2.0
+621 silly currentTree ├── async@2.0.1
+621 silly currentTree ├── asynckit@0.4.0
+621 silly currentTree ├── aws-sign2@0.6.0
+621 silly currentTree ├── aws4@1.5.0
+621 silly currentTree ├── basic-auth@1.0.4
+621 silly currentTree ├─┬ bl@1.1.2
+621 silly currentTree │ └── readable-stream@2.0.6
+621 silly currentTree ├── bluebird@2.10.2
+621 silly currentTree ├─┬ body-parser@1.15.2
+621 silly currentTree │ └── debug@2.2.0
+621 silly currentTree ├── boom@2.10.1
+621 silly currentTree ├── bson@0.5.6
+621 silly currentTree ├── buffer-shims@1.0.0
+621 silly currentTree ├── bytes@2.4.0
+621 silly currentTree ├── camelcase@1.2.1
+621 silly currentTree ├── caseless@0.11.0
+621 silly currentTree ├── center-align@0.1.3
+621 silly currentTree ├── chalk@1.1.3
+621 silly currentTree ├── character-parser@1.2.1
+621 silly currentTree ├─┬ clean-css@3.4.20
+621 silly currentTree │ └── commander@2.8.1
+621 silly currentTree ├─┬ cliui@2.1.0
+621 silly currentTree │ └── wordwrap@0.0.2
+621 silly currentTree ├── combined-stream@1.0.5
+621 silly currentTree ├── commander@2.6.0
+621 silly currentTree ├── content-disposition@0.5.1
+621 silly currentTree ├── content-type@1.0.2
+621 silly currentTree ├─┬ cookie-parser@1.4.3
+621 silly currentTree │ └── cookie@0.3.1
+621 silly currentTree ├── cookie-signature@1.0.6
+621 silly currentTree ├── cookie@0.1.5
+621 silly currentTree ├── core-util-is@1.0.2
+621 silly currentTree ├── cryptiles@2.0.5
+621 silly currentTree ├── css-parse@1.0.4
+621 silly currentTree ├── css-stringify@1.0.5
+621 silly currentTree ├── css@1.0.8
+621 silly currentTree ├── debug@2.2.0
+621 silly currentTree ├── decamelize@1.2.0
+621 silly currentTree ├── delayed-stream@1.0.0
+621 silly currentTree ├── depd@1.1.0
+621 silly currentTree ├── destroy@1.0.4
+621 silly currentTree ├── ee-first@1.1.1
+621 silly currentTree ├── es6-promise@3.2.1
+621 silly currentTree ├── escape-html@1.0.3
+621 silly currentTree ├── escape-string-regexp@1.0.5
+621 silly currentTree ├── etag@1.7.0
+621 silly currentTree ├─┬ express@4.13.4
+621 silly currentTree │ ├── debug@2.2.0
+621 silly currentTree │ └── qs@4.0.0
+621 silly currentTree ├── extend@3.0.0
+621 silly currentTree ├── extsprintf@1.0.2
+621 silly currentTree ├─┬ finalhandler@0.4.1
+621 silly currentTree │ └── debug@2.2.0
+621 silly currentTree ├── forever-agent@0.6.1
+621 silly currentTree ├── form-data@2.0.0
+621 silly currentTree ├── forwarded@0.1.0
+621 silly currentTree ├── fresh@0.3.0
+621 silly currentTree ├── generate-function@2.0.0
+621 silly currentTree ├── generate-object-property@1.2.0
+621 silly currentTree ├── graceful-readlink@1.0.1
+621 silly currentTree ├─┬ har-validator@2.0.6
+621 silly currentTree │ └── commander@2.9.0
+621 silly currentTree ├── has-ansi@2.0.0
+621 silly currentTree ├── hawk@3.1.3
+621 silly currentTree ├── hoek@2.16.3
+621 silly currentTree ├── hooks-fixed@1.2.0
+621 silly currentTree ├── http-errors@1.5.0
+621 silly currentTree ├── iconv-lite@0.4.13
+621 silly currentTree ├── inherits@2.0.1
+621 silly currentTree ├── ipaddr.js@1.0.5
+621 silly currentTree ├── is-buffer@1.1.4
+621 silly currentTree ├── is-my-json-valid@2.15.0
+621 silly currentTree ├── is-promise@2.1.0
+621 silly currentTree ├── is-property@1.0.2
+621 silly currentTree ├── is-typedarray@1.0.0
+621 silly currentTree ├── isarray@1.0.0
+621 silly currentTree ├── isstream@0.1.2
+621 silly currentTree ├── json-schema@0.2.3
+621 silly currentTree ├── json-stringify-safe@5.0.1
+621 silly currentTree ├── jsonpointer@4.0.0
+621 silly currentTree ├── jsprim@1.3.1
+621 silly currentTree ├── jstransformer@0.0.2
+621 silly currentTree ├── kareem@1.1.3
+621 silly currentTree ├── kind-of@3.0.4
+621 silly currentTree ├── lazy-cache@1.0.4
+621 silly currentTree ├── lodash@4.16.4
+621 silly currentTree ├── longest@1.0.1
+621 silly currentTree ├── media-typer@0.3.0
+621 silly currentTree ├── merge-descriptors@1.0.1
+621 silly currentTree ├── methods@1.1.2
+621 silly currentTree ├── mime-db@1.24.0
+621 silly currentTree ├── mime-types@2.1.12
+621 silly currentTree ├── mime@1.3.4
+621 silly currentTree ├── minimist@0.0.8
+621 silly currentTree ├── mkdirp@0.5.1
+621 silly currentTree ├── mongodb-core@2.0.12
+621 silly currentTree ├── mongodb@2.2.10
+621 silly currentTree ├── mongoose@4.6.4
+621 silly currentTree ├── morgan@1.7.0
+621 silly currentTree ├── mpath@0.2.1
+621 silly currentTree ├── mpromise@0.5.5
+621 silly currentTree ├─┬ mquery@2.0.0
+621 silly currentTree │ ├── debug@2.2.0
+621 silly currentTree │ └── sliced@0.0.5
+621 silly currentTree ├── ms@0.7.1
+621 silly currentTree ├── muri@1.1.1
+621 silly currentTree ├── negotiator@0.5.3
+621 silly currentTree ├── node-uuid@1.4.7
+621 silly currentTree ├── oauth-sign@0.8.2
+621 silly currentTree ├── on-finished@2.3.0
+621 silly currentTree ├── on-headers@1.0.1
+621 silly currentTree ├── optimist@0.3.7
+621 silly currentTree ├── parseurl@1.3.1
+621 silly currentTree ├── path-to-regexp@0.1.7
+621 silly currentTree ├── path@0.12.7
+621 silly currentTree ├── pinkie-promise@2.0.1
+621 silly currentTree ├── pinkie@2.0.4
+621 silly currentTree ├── process-nextick-args@1.0.7
+621 silly currentTree ├── process@0.11.9
+621 silly currentTree ├── promise@6.1.0
+621 silly currentTree ├── proxy-addr@1.0.10
+621 silly currentTree ├── qs@6.2.0
+621 silly currentTree ├── range-parser@1.0.3
+621 silly currentTree ├── raw-body@2.1.7
+621 silly currentTree ├── readable-stream@2.1.5
+621 silly currentTree ├── regexp-clone@0.0.1
+621 silly currentTree ├── repeat-string@1.6.1
+621 silly currentTree ├── require_optional@1.0.0
+621 silly currentTree ├── resolve-from@2.0.0
+621 silly currentTree ├── right-align@0.1.3
+621 silly currentTree ├── semver@5.3.0
+621 silly currentTree ├─┬ send@0.13.1
+621 silly currentTree │ ├── debug@2.2.0
+621 silly currentTree │ ├── http-errors@1.3.1
+621 silly currentTree │ └── statuses@1.2.1
+621 silly currentTree ├── serve-favicon@2.3.0
+621 silly currentTree ├─┬ serve-static@1.10.3
+621 silly currentTree │ ├── debug@2.2.0
+621 silly currentTree │ ├── http-errors@1.3.1
+621 silly currentTree │ ├── send@0.13.2
+621 silly currentTree │ └── statuses@1.2.1
+621 silly currentTree ├── setprototypeof@1.0.1
+621 silly currentTree ├── sliced@1.0.1
+621 silly currentTree ├── sntp@1.0.9
+621 silly currentTree ├── source-map@0.4.4
+621 silly currentTree ├── statuses@1.3.0
+621 silly currentTree ├── string_decoder@0.10.31
+621 silly currentTree ├── stringstream@0.0.5
+621 silly currentTree ├── strip-ansi@3.0.1
+621 silly currentTree ├── supports-color@2.0.0
+621 silly currentTree ├── tough-cookie@2.3.1
+621 silly currentTree ├─┬ transformers@2.1.0
+621 silly currentTree │ ├── is-promise@1.0.1
+621 silly currentTree │ ├── promise@2.0.0
+621 silly currentTree │ ├── source-map@0.1.43
+621 silly currentTree │ └── uglify-js@2.2.5
+621 silly currentTree ├── tunnel-agent@0.4.3
+621 silly currentTree ├── type-is@1.6.13
+621 silly currentTree ├─┬ uglify-js@2.7.4
+621 silly currentTree │ ├── async@0.2.10
+621 silly currentTree │ └── source-map@0.5.6
+621 silly currentTree ├── uglify-to-browserify@1.0.2
+621 silly currentTree ├── unpipe@1.0.0
+621 silly currentTree ├── util-deprecate@1.0.2
+621 silly currentTree ├── util@0.10.3
+621 silly currentTree ├── utils-merge@1.0.0
+621 silly currentTree ├── vary@1.0.1
+621 silly currentTree ├── verror@1.3.6
+621 silly currentTree ├── void-elements@2.0.1
+621 silly currentTree ├── window-size@0.1.0
+621 silly currentTree ├─┬ with@4.0.3
+621 silly currentTree │ └── acorn@1.2.2
+621 silly currentTree ├── wordwrap@0.0.3
+621 silly currentTree ├── xtend@4.0.1
+621 silly currentTree └── yargs@3.10.0
+622 silly idealTree Watch-This-Movie@0.0.0
+622 silly idealTree ├── accepts@1.2.13
+622 silly idealTree ├── acorn-globals@1.0.9
+622 silly idealTree ├── acorn@2.7.0
+622 silly idealTree ├── align-text@0.1.4
+622 silly idealTree ├── amdefine@1.0.0
+622 silly idealTree ├── ansi-regex@2.0.0
+622 silly idealTree ├── ansi-styles@2.2.1
+622 silly idealTree ├── array-flatten@1.1.1
+622 silly idealTree ├── asap@1.0.0
+622 silly idealTree ├── asn1@0.2.3
+622 silly idealTree ├── assert-plus@0.2.0
+622 silly idealTree ├── async@2.0.1
+622 silly idealTree ├── asynckit@0.4.0
+622 silly idealTree ├── aws-sign2@0.6.0
+622 silly idealTree ├── aws4@1.5.0
+622 silly idealTree ├── basic-auth@1.0.4
+622 silly idealTree ├── bcrypt-pbkdf@1.0.0
+622 silly idealTree ├─┬ bl@1.1.2
+622 silly idealTree │ └── readable-stream@2.0.6
+622 silly idealTree ├── bluebird@2.10.2
+622 silly idealTree ├─┬ body-parser@1.15.2
+622 silly idealTree │ └── debug@2.2.0
+622 silly idealTree ├── boom@2.10.1
+622 silly idealTree ├── bson@0.5.6
+622 silly idealTree ├── buffer-shims@1.0.0
+622 silly idealTree ├── bytes@2.4.0
+622 silly idealTree ├── camelcase@1.2.1
+622 silly idealTree ├── caseless@0.11.0
+622 silly idealTree ├── center-align@0.1.3
+622 silly idealTree ├── chalk@1.1.3
+622 silly idealTree ├── character-parser@1.2.1
+622 silly idealTree ├─┬ clean-css@3.4.20
+622 silly idealTree │ └── commander@2.8.1
+622 silly idealTree ├─┬ cliui@2.1.0
+622 silly idealTree │ └── wordwrap@0.0.2
+622 silly idealTree ├── combined-stream@1.0.5
+622 silly idealTree ├── commander@2.6.0
+622 silly idealTree ├── constantinople@3.0.2
+622 silly idealTree ├── content-disposition@0.5.1
+622 silly idealTree ├── content-type@1.0.2
+622 silly idealTree ├─┬ cookie-parser@1.4.3
+622 silly idealTree │ └── cookie@0.3.1
+622 silly idealTree ├── cookie-signature@1.0.6
+622 silly idealTree ├── cookie@0.1.5
+622 silly idealTree ├── core-util-is@1.0.2
+622 silly idealTree ├── cryptiles@2.0.5
+622 silly idealTree ├── css-parse@1.0.4
+622 silly idealTree ├── css-stringify@1.0.5
+622 silly idealTree ├── css@1.0.8
+622 silly idealTree ├─┬ dashdash@1.14.0
+622 silly idealTree │ └── assert-plus@1.0.0
+622 silly idealTree ├── debug@2.2.0
+622 silly idealTree ├── decamelize@1.2.0
+622 silly idealTree ├── delayed-stream@1.0.0
+622 silly idealTree ├── depd@1.1.0
+622 silly idealTree ├── destroy@1.0.4
+622 silly idealTree ├── ecc-jsbn@0.1.1
+622 silly idealTree ├── ee-first@1.1.1
+622 silly idealTree ├── es6-promise@3.2.1
+622 silly idealTree ├── escape-html@1.0.3
+622 silly idealTree ├── escape-string-regexp@1.0.5
+622 silly idealTree ├── etag@1.7.0
+622 silly idealTree ├─┬ express@4.13.4
+622 silly idealTree │ ├── debug@2.2.0
+622 silly idealTree │ └── qs@4.0.0
+622 silly idealTree ├── extend@3.0.0
+622 silly idealTree ├── extsprintf@1.0.2
+622 silly idealTree ├─┬ finalhandler@0.4.1
+622 silly idealTree │ └── debug@2.2.0
+622 silly idealTree ├── forever-agent@0.6.1
+622 silly idealTree ├── form-data@2.0.0
+622 silly idealTree ├── forwarded@0.1.0
+622 silly idealTree ├── fresh@0.3.0
+622 silly idealTree ├── generate-function@2.0.0
+622 silly idealTree ├── generate-object-property@1.2.0
+622 silly idealTree ├─┬ getpass@0.1.6
+622 silly idealTree │ └── assert-plus@1.0.0
+622 silly idealTree ├── graceful-readlink@1.0.1
+622 silly idealTree ├─┬ har-validator@2.0.6
+622 silly idealTree │ └── commander@2.9.0
+622 silly idealTree ├── has-ansi@2.0.0
+622 silly idealTree ├── hawk@3.1.3
+622 silly idealTree ├── hoek@2.16.3
+622 silly idealTree ├── hooks-fixed@1.2.0
+622 silly idealTree ├── http-errors@1.5.0
+622 silly idealTree ├── http-signature@1.1.1
+622 silly idealTree ├── iconv-lite@0.4.13
+622 silly idealTree ├── inherits@2.0.1
+622 silly idealTree ├── ipaddr.js@1.0.5
+622 silly idealTree ├── is-buffer@1.1.4
+622 silly idealTree ├── is-my-json-valid@2.15.0
+622 silly idealTree ├── is-promise@2.1.0
+622 silly idealTree ├── is-property@1.0.2
+622 silly idealTree ├── is-typedarray@1.0.0
+622 silly idealTree ├── isarray@1.0.0
+622 silly idealTree ├── isstream@0.1.2
+622 silly idealTree ├── jade@1.11.0
+622 silly idealTree ├── jodid25519@1.0.2
+622 silly idealTree ├── jsbn@0.1.0
+622 silly idealTree ├── json-schema@0.2.3
+622 silly idealTree ├── json-stringify-safe@5.0.1
+622 silly idealTree ├── jsonpointer@4.0.0
+622 silly idealTree ├── jsprim@1.3.1
+622 silly idealTree ├── jstransformer@0.0.2
+622 silly idealTree ├── kareem@1.1.3
+622 silly idealTree ├── kind-of@3.0.4
+622 silly idealTree ├── lazy-cache@1.0.4
+622 silly idealTree ├── lodash@4.16.4
+622 silly idealTree ├── longest@1.0.1
+622 silly idealTree ├── media-typer@0.3.0
+622 silly idealTree ├── merge-descriptors@1.0.1
+622 silly idealTree ├── methods@1.1.2
+622 silly idealTree ├── mime-db@1.24.0
+622 silly idealTree ├── mime-types@2.1.12
+622 silly idealTree ├── mime@1.3.4
+622 silly idealTree ├── minimist@0.0.8
+622 silly idealTree ├── mkdirp@0.5.1
+622 silly idealTree ├── mongodb-core@2.0.12
+622 silly idealTree ├── mongodb@2.2.10
+622 silly idealTree ├── mongoose@4.6.4
+622 silly idealTree ├── morgan@1.7.0
+622 silly idealTree ├── mpath@0.2.1
+622 silly idealTree ├── mpromise@0.5.5
+622 silly idealTree ├─┬ mquery@2.0.0
+622 silly idealTree │ ├── debug@2.2.0
+622 silly idealTree │ └── sliced@0.0.5
+622 silly idealTree ├── ms@0.7.1
+622 silly idealTree ├── muri@1.1.1
+622 silly idealTree ├── negotiator@0.5.3
+622 silly idealTree ├── node-uuid@1.4.7
+622 silly idealTree ├── oauth-sign@0.8.2
+622 silly idealTree ├── on-finished@2.3.0
+622 silly idealTree ├── on-headers@1.0.1
+622 silly idealTree ├── optimist@0.3.7
+622 silly idealTree ├── parseurl@1.3.1
+622 silly idealTree ├── path-to-regexp@0.1.7
+622 silly idealTree ├── path@0.12.7
+622 silly idealTree ├── pinkie-promise@2.0.1
+622 silly idealTree ├── pinkie@2.0.4
+622 silly idealTree ├── process-nextick-args@1.0.7
+622 silly idealTree ├── process@0.11.9
+622 silly idealTree ├── promise@6.1.0
+622 silly idealTree ├── proxy-addr@1.0.10
+622 silly idealTree ├── qs@6.2.0
+622 silly idealTree ├── range-parser@1.0.3
+622 silly idealTree ├── raw-body@2.1.7
+622 silly idealTree ├── readable-stream@2.1.5
+622 silly idealTree ├── regexp-clone@0.0.1
+622 silly idealTree ├── repeat-string@1.6.1
+622 silly idealTree ├── request@2.75.0
+622 silly idealTree ├── require_optional@1.0.0
+622 silly idealTree ├── resolve-from@2.0.0
+622 silly idealTree ├── right-align@0.1.3
+622 silly idealTree ├── semver@5.3.0
+622 silly idealTree ├─┬ send@0.13.1
+622 silly idealTree │ ├── debug@2.2.0
+622 silly idealTree │ ├── http-errors@1.3.1
+622 silly idealTree │ └── statuses@1.2.1
+622 silly idealTree ├── serve-favicon@2.3.0
+622 silly idealTree ├─┬ serve-static@1.10.3
+622 silly idealTree │ ├── debug@2.2.0
+622 silly idealTree │ ├── http-errors@1.3.1
+622 silly idealTree │ ├── send@0.13.2
+622 silly idealTree │ └── statuses@1.2.1
+622 silly idealTree ├── setprototypeof@1.0.1
+622 silly idealTree ├── sliced@1.0.1
+622 silly idealTree ├── sntp@1.0.9
+622 silly idealTree ├── source-map@0.4.4
+622 silly idealTree ├─┬ sshpk@1.10.1
+622 silly idealTree │ └── assert-plus@1.0.0
+622 silly idealTree ├── statuses@1.3.0
+622 silly idealTree ├── string_decoder@0.10.31
+622 silly idealTree ├── stringstream@0.0.5
+622 silly idealTree ├── strip-ansi@3.0.1
+622 silly idealTree ├── supports-color@2.0.0
+622 silly idealTree ├── tough-cookie@2.3.1
+622 silly idealTree ├─┬ transformers@2.1.0
+622 silly idealTree │ ├── is-promise@1.0.1
+622 silly idealTree │ ├── promise@2.0.0
+622 silly idealTree │ ├── source-map@0.1.43
+622 silly idealTree │ └── uglify-js@2.2.5
+622 silly idealTree ├── tunnel-agent@0.4.3
+622 silly idealTree ├── tweetnacl@0.14.3
+622 silly idealTree ├── type-is@1.6.13
+622 silly idealTree ├─┬ uglify-js@2.7.4
+622 silly idealTree │ ├── async@0.2.10
+622 silly idealTree │ └── source-map@0.5.6
+622 silly idealTree ├── uglify-to-browserify@1.0.2
+622 silly idealTree ├── unpipe@1.0.0
+622 silly idealTree ├── util-deprecate@1.0.2
+622 silly idealTree ├── util@0.10.3
+622 silly idealTree ├── utils-merge@1.0.0
+622 silly idealTree ├── vary@1.0.1
+622 silly idealTree ├── verror@1.3.6
+622 silly idealTree ├── void-elements@2.0.1
+622 silly idealTree ├── window-size@0.1.0
+622 silly idealTree ├─┬ with@4.0.3
+622 silly idealTree │ └── acorn@1.2.2
+622 silly idealTree ├── wordwrap@0.0.3
+622 silly idealTree ├── xtend@4.0.1
+622 silly idealTree └── yargs@3.10.0
+623 silly generateActionsToTake Starting
+624 silly install generateActionsToTake
+625 silly generateActionsToTake Finishing
+626 silly diffTrees action count 17
+627 silly diffTrees add acorn@2.7.0
+628 silly diffTrees add asn1@0.2.3
+629 silly diffTrees add constantinople@3.0.2
+630 silly diffTrees add assert-plus@1.0.0
+631 silly diffTrees add dashdash@1.14.0
+632 silly diffTrees add assert-plus@1.0.0
+633 silly diffTrees add getpass@0.1.6
+634 silly diffTrees add jsbn@0.1.0
+635 silly diffTrees add ecc-jsbn@0.1.1
+636 silly diffTrees add jodid25519@1.0.2
+637 silly diffTrees add assert-plus@1.0.0
+638 silly diffTrees add tweetnacl@0.14.3
+639 silly diffTrees add bcrypt-pbkdf@1.0.0
+640 silly diffTrees add sshpk@1.10.1
+641 silly diffTrees add http-signature@1.1.1
+642 silly diffTrees add jade@1.11.0
+643 silly diffTrees add request@2.75.0
+644 silly decomposeActions action count 136
+645 silly decomposeActions fetch acorn@2.7.0
+646 silly decomposeActions extract acorn@2.7.0
+647 silly decomposeActions test acorn@2.7.0
+648 silly decomposeActions preinstall acorn@2.7.0
+649 silly decomposeActions build acorn@2.7.0
+650 silly decomposeActions install acorn@2.7.0
+651 silly decomposeActions postinstall acorn@2.7.0
+652 silly decomposeActions finalize acorn@2.7.0
+653 silly decomposeActions fetch asn1@0.2.3
+654 silly decomposeActions extract asn1@0.2.3
+655 silly decomposeActions test asn1@0.2.3
+656 silly decomposeActions preinstall asn1@0.2.3
+657 silly decomposeActions build asn1@0.2.3
+658 silly decomposeActions install asn1@0.2.3
+659 silly decomposeActions postinstall asn1@0.2.3
+660 silly decomposeActions finalize asn1@0.2.3
+661 silly decomposeActions fetch constantinople@3.0.2
+662 silly decomposeActions extract constantinople@3.0.2
+663 silly decomposeActions test constantinople@3.0.2
+664 silly decomposeActions preinstall constantinople@3.0.2
+665 silly decomposeActions build constantinople@3.0.2
+666 silly decomposeActions install constantinople@3.0.2
+667 silly decomposeActions postinstall constantinople@3.0.2
+668 silly decomposeActions finalize constantinople@3.0.2
+669 silly decomposeActions fetch assert-plus@1.0.0
+670 silly decomposeActions extract assert-plus@1.0.0
+671 silly decomposeActions test assert-plus@1.0.0
+672 silly decomposeActions preinstall assert-plus@1.0.0
+673 silly decomposeActions build assert-plus@1.0.0
+674 silly decomposeActions install assert-plus@1.0.0
+675 silly decomposeActions postinstall assert-plus@1.0.0
+676 silly decomposeActions finalize assert-plus@1.0.0
+677 silly decomposeActions fetch dashdash@1.14.0
+678 silly decomposeActions extract dashdash@1.14.0
+679 silly decomposeActions test dashdash@1.14.0
+680 silly decomposeActions preinstall dashdash@1.14.0
+681 silly decomposeActions build dashdash@1.14.0
+682 silly decomposeActions install dashdash@1.14.0
+683 silly decomposeActions postinstall dashdash@1.14.0
+684 silly decomposeActions finalize dashdash@1.14.0
+685 silly decomposeActions fetch assert-plus@1.0.0
+686 silly decomposeActions extract assert-plus@1.0.0
+687 silly decomposeActions test assert-plus@1.0.0
+688 silly decomposeActions preinstall assert-plus@1.0.0
+689 silly decomposeActions build assert-plus@1.0.0
+690 silly decomposeActions install assert-plus@1.0.0
+691 silly decomposeActions postinstall assert-plus@1.0.0
+692 silly decomposeActions finalize assert-plus@1.0.0
+693 silly decomposeActions fetch getpass@0.1.6
+694 silly decomposeActions extract getpass@0.1.6
+695 silly decomposeActions test getpass@0.1.6
+696 silly decomposeActions preinstall getpass@0.1.6
+697 silly decomposeActions build getpass@0.1.6
+698 silly decomposeActions install getpass@0.1.6
+699 silly decomposeActions postinstall getpass@0.1.6
+700 silly decomposeActions finalize getpass@0.1.6
+701 silly decomposeActions fetch jsbn@0.1.0
+702 silly decomposeActions extract jsbn@0.1.0
+703 silly decomposeActions test jsbn@0.1.0
+704 silly decomposeActions preinstall jsbn@0.1.0
+705 silly decomposeActions build jsbn@0.1.0
+706 silly decomposeActions install jsbn@0.1.0
+707 silly decomposeActions postinstall jsbn@0.1.0
+708 silly decomposeActions finalize jsbn@0.1.0
+709 silly decomposeActions fetch ecc-jsbn@0.1.1
+710 silly decomposeActions extract ecc-jsbn@0.1.1
+711 silly decomposeActions test ecc-jsbn@0.1.1
+712 silly decomposeActions preinstall ecc-jsbn@0.1.1
+713 silly decomposeActions build ecc-jsbn@0.1.1
+714 silly decomposeActions install ecc-jsbn@0.1.1
+715 silly decomposeActions postinstall ecc-jsbn@0.1.1
+716 silly decomposeActions finalize ecc-jsbn@0.1.1
+717 silly decomposeActions fetch jodid25519@1.0.2
+718 silly decomposeActions extract jodid25519@1.0.2
+719 silly decomposeActions test jodid25519@1.0.2
+720 silly decomposeActions preinstall jodid25519@1.0.2
+721 silly decomposeActions build jodid25519@1.0.2
+722 silly decomposeActions install jodid25519@1.0.2
+723 silly decomposeActions postinstall jodid25519@1.0.2
+724 silly decomposeActions finalize jodid25519@1.0.2
+725 silly decomposeActions fetch assert-plus@1.0.0
+726 silly decomposeActions extract assert-plus@1.0.0
+727 silly decomposeActions test assert-plus@1.0.0
+728 silly decomposeActions preinstall assert-plus@1.0.0
+729 silly decomposeActions build assert-plus@1.0.0
+730 silly decomposeActions install assert-plus@1.0.0
+731 silly decomposeActions postinstall assert-plus@1.0.0
+732 silly decomposeActions finalize assert-plus@1.0.0
+733 silly decomposeActions fetch tweetnacl@0.14.3
+734 silly decomposeActions extract tweetnacl@0.14.3
+735 silly decomposeActions test tweetnacl@0.14.3
+736 silly decomposeActions preinstall tweetnacl@0.14.3
+737 silly decomposeActions build tweetnacl@0.14.3
+738 silly decomposeActions install tweetnacl@0.14.3
+739 silly decomposeActions postinstall tweetnacl@0.14.3
+740 silly decomposeActions finalize tweetnacl@0.14.3
+741 silly decomposeActions fetch bcrypt-pbkdf@1.0.0
+742 silly decomposeActions extract bcrypt-pbkdf@1.0.0
+743 silly decomposeActions test bcrypt-pbkdf@1.0.0
+744 silly decomposeActions preinstall bcrypt-pbkdf@1.0.0
+745 silly decomposeActions build bcrypt-pbkdf@1.0.0
+746 silly decomposeActions install bcrypt-pbkdf@1.0.0
+747 silly decomposeActions postinstall bcrypt-pbkdf@1.0.0
+748 silly decomposeActions finalize bcrypt-pbkdf@1.0.0
+749 silly decomposeActions fetch sshpk@1.10.1
+750 silly decomposeActions extract sshpk@1.10.1
+751 silly decomposeActions test sshpk@1.10.1
+752 silly decomposeActions preinstall sshpk@1.10.1
+753 silly decomposeActions build sshpk@1.10.1
+754 silly decomposeActions install sshpk@1.10.1
+755 silly decomposeActions postinstall sshpk@1.10.1
+756 silly decomposeActions finalize sshpk@1.10.1
+757 silly decomposeActions fetch http-signature@1.1.1
+758 silly decomposeActions extract http-signature@1.1.1
+759 silly decomposeActions test http-signature@1.1.1
+760 silly decomposeActions preinstall http-signature@1.1.1
+761 silly decomposeActions build http-signature@1.1.1
+762 silly decomposeActions install http-signature@1.1.1
+763 silly decomposeActions postinstall http-signature@1.1.1
+764 silly decomposeActions finalize http-signature@1.1.1
+765 silly decomposeActions fetch jade@1.11.0
+766 silly decomposeActions extract jade@1.11.0
+767 silly decomposeActions test jade@1.11.0
+768 silly decomposeActions preinstall jade@1.11.0
+769 silly decomposeActions build jade@1.11.0
+770 silly decomposeActions install jade@1.11.0
+771 silly decomposeActions postinstall jade@1.11.0
+772 silly decomposeActions finalize jade@1.11.0
+773 silly decomposeActions fetch request@2.75.0
+774 silly decomposeActions extract request@2.75.0
+775 silly decomposeActions test request@2.75.0
+776 silly decomposeActions preinstall request@2.75.0
+777 silly decomposeActions build request@2.75.0
+778 silly decomposeActions install request@2.75.0
+779 silly decomposeActions postinstall request@2.75.0
+780 silly decomposeActions finalize request@2.75.0
+781 silly runTopLevelLifecycles Starting
+782 silly install runPreinstallTopLevelLifecycles
+783 silly preinstall Watch-This-Movie@0.0.0 /vagrant/shared/Watch-This-Movie/Watch-This-Movie-686df815
+784 info lifecycle Watch-This-Movie@0.0.0~preinstall: Watch-This-Movie@0.0.0
+785 silly lifecycle Watch-This-Movie@0.0.0~preinstall: no script for preinstall, continuing
+786 silly executeActions Starting
+787 silly install executeActions
+788 silly doSerial global-install 0
+789 silly doParallel fetch 17
+790 verbose correctMkdir /home/vagrant/.npm/_locks correctMkdir not in flight; initializing
+791 verbose lock using /home/vagrant/.npm/_locks/staging-3898665aba40f3d8.lock for /vagrant/shared/Watch-This-Movie/node_modules/.staging
+792 silly doParallel extract 17
+793 silly extract acorn@2.7.0
+794 silly extract asn1@0.2.3
+795 silly extract constantinople@3.0.2
+796 silly extract assert-plus@1.0.0
+797 silly extract dashdash@1.14.0
+798 silly extract assert-plus@1.0.0
+799 silly extract getpass@0.1.6
+800 silly extract jsbn@0.1.0
+801 silly extract ecc-jsbn@0.1.1
+802 silly extract jodid25519@1.0.2
+803 silly extract assert-plus@1.0.0
+804 silly extract tweetnacl@0.14.3
+805 silly extract bcrypt-pbkdf@1.0.0
+806 silly extract sshpk@1.10.1
+807 silly extract http-signature@1.1.1
+808 silly extract jade@1.11.0
+809 silly extract request@2.75.0
+810 verbose unbuild node_modules/.staging/asn1-2b0a7c2f
+811 verbose unbuild node_modules/.staging/constantinople-2a060eb3
+812 verbose unbuild node_modules/.staging/assert-plus-6c2bee55
+813 verbose unbuild node_modules/.staging/dashdash-f1a30222
+814 verbose unbuild node_modules/.staging/assert-plus-de7d6d61
+815 verbose unbuild node_modules/.staging/getpass-c58a05c4
+816 verbose unbuild node_modules/.staging/jsbn-3b5881fe
+817 verbose unbuild node_modules/.staging/ecc-jsbn-e4e1a804
+818 verbose unbuild node_modules/.staging/jodid25519-ba4e3fc6
+819 verbose unbuild node_modules/.staging/assert-plus-4c4f6ef1
+820 verbose unbuild node_modules/.staging/tweetnacl-7d70b9b7
+821 verbose unbuild node_modules/.staging/bcrypt-pbkdf-4dc1bcb8
+822 verbose unbuild node_modules/.staging/http-signature-633f8033
+823 verbose unbuild node_modules/.staging/request-8e65ad0b
+824 verbose unbuild node_modules/.staging/acorn-a01622cc
+825 verbose unbuild node_modules/.staging/sshpk-8b043cad
+826 verbose unbuild node_modules/.staging/jade-1637579f
+827 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/asn1-2b0a7c2f is being purged from base /vagrant/shared/Watch-This-Movie
+828 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/asn1-2b0a7c2f
+829 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/constantinople-2a060eb3 is being purged from base /vagrant/shared/Watch-This-Movie
+830 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/constantinople-2a060eb3
+831 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/dashdash-f1a30222 is being purged from base /vagrant/shared/Watch-This-Movie
+832 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/dashdash-f1a30222
+833 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-de7d6d61 is being purged from base /vagrant/shared/Watch-This-Movie
+834 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-de7d6d61
+835 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-6c2bee55 is being purged from base /vagrant/shared/Watch-This-Movie
+836 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-6c2bee55
+837 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/getpass-c58a05c4 is being purged from base /vagrant/shared/Watch-This-Movie
+838 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/getpass-c58a05c4
+839 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/jsbn-3b5881fe is being purged from base /vagrant/shared/Watch-This-Movie
+840 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/jsbn-3b5881fe
+841 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/ecc-jsbn-e4e1a804 is being purged from base /vagrant/shared/Watch-This-Movie
+842 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/ecc-jsbn-e4e1a804
+843 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/jodid25519-ba4e3fc6 is being purged from base /vagrant/shared/Watch-This-Movie
+844 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/jodid25519-ba4e3fc6
+845 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/tweetnacl-7d70b9b7 is being purged from base /vagrant/shared/Watch-This-Movie
+846 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/tweetnacl-7d70b9b7
+847 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-4c4f6ef1 is being purged from base /vagrant/shared/Watch-This-Movie
+848 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-4c4f6ef1
+849 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/bcrypt-pbkdf-4dc1bcb8 is being purged from base /vagrant/shared/Watch-This-Movie
+850 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/bcrypt-pbkdf-4dc1bcb8
+851 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/http-signature-633f8033 is being purged from base /vagrant/shared/Watch-This-Movie
+852 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/http-signature-633f8033
+853 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/request-8e65ad0b is being purged from base /vagrant/shared/Watch-This-Movie
+854 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/request-8e65ad0b
+855 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/acorn-a01622cc is being purged from base /vagrant/shared/Watch-This-Movie
+856 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/acorn-a01622cc
+857 verbose tar unpack /home/vagrant/.npm/asn1/0.2.3/package.tgz
+858 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/asn1-2b0a7c2f
+859 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/asn1-2b0a7c2f is being purged
+860 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/asn1-2b0a7c2f
+861 verbose tar unpack /home/vagrant/.npm/dashdash/1.14.0/package.tgz
+862 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/dashdash-f1a30222
+863 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/dashdash-f1a30222 is being purged
+864 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/dashdash-f1a30222
+865 verbose tar unpack /home/vagrant/.npm/assert-plus/1.0.0/package.tgz
+866 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-de7d6d61
+867 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-de7d6d61 is being purged
+868 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-de7d6d61
+869 verbose tar unpack /home/vagrant/.npm/constantinople/3.0.2/package.tgz
+870 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/constantinople-2a060eb3
+871 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/constantinople-2a060eb3 is being purged
+872 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/constantinople-2a060eb3
+873 verbose tar unpack /home/vagrant/.npm/assert-plus/1.0.0/package.tgz
+874 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-6c2bee55
+875 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-6c2bee55 is being purged
+876 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-6c2bee55
+877 verbose tar unpack /home/vagrant/.npm/getpass/0.1.6/package.tgz
+878 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/getpass-c58a05c4
+879 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/getpass-c58a05c4 is being purged
+880 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/getpass-c58a05c4
+881 verbose tar unpack /home/vagrant/.npm/jsbn/0.1.0/package.tgz
+882 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/jsbn-3b5881fe
+883 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/jsbn-3b5881fe is being purged
+884 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/jsbn-3b5881fe
+885 verbose tar unpack /home/vagrant/.npm/ecc-jsbn/0.1.1/package.tgz
+886 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/ecc-jsbn-e4e1a804
+887 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/ecc-jsbn-e4e1a804 is being purged
+888 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/ecc-jsbn-e4e1a804
+889 verbose tar unpack /home/vagrant/.npm/jodid25519/1.0.2/package.tgz
+890 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/jodid25519-ba4e3fc6
+891 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/jodid25519-ba4e3fc6 is being purged
+892 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/jodid25519-ba4e3fc6
+893 verbose tar unpack /home/vagrant/.npm/assert-plus/1.0.0/package.tgz
+894 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-4c4f6ef1
+895 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-4c4f6ef1 is being purged
+896 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-4c4f6ef1
+897 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/sshpk-8b043cad is being purged from base /vagrant/shared/Watch-This-Movie
+898 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/sshpk-8b043cad
+899 verbose tar unpack /home/vagrant/.npm/tweetnacl/0.14.3/package.tgz
+900 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/tweetnacl-7d70b9b7
+901 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/tweetnacl-7d70b9b7 is being purged
+902 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/tweetnacl-7d70b9b7
+903 verbose tar unpack /home/vagrant/.npm/bcrypt-pbkdf/1.0.0/package.tgz
+904 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/bcrypt-pbkdf-4dc1bcb8
+905 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/bcrypt-pbkdf-4dc1bcb8 is being purged
+906 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/bcrypt-pbkdf-4dc1bcb8
+907 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/jade-1637579f is being purged from base /vagrant/shared/Watch-This-Movie
+908 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/jade-1637579f
+909 verbose tar unpack /home/vagrant/.npm/http-signature/1.1.1/package.tgz
+910 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/http-signature-633f8033
+911 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/http-signature-633f8033 is being purged
+912 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/http-signature-633f8033
+913 verbose tar unpack /home/vagrant/.npm/request/2.75.0/package.tgz
+914 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/request-8e65ad0b
+915 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/request-8e65ad0b is being purged
+916 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/request-8e65ad0b
+917 verbose tar unpack /home/vagrant/.npm/acorn/2.7.0/package.tgz
+918 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/acorn-a01622cc
+919 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/acorn-a01622cc is being purged
+920 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/acorn-a01622cc
+921 silly gunzTarPerm modes [ '775', '664' ]
+922 silly gunzTarPerm modes [ '775', '664' ]
+923 silly gunzTarPerm modes [ '775', '664' ]
+924 silly gunzTarPerm modes [ '775', '664' ]
+925 silly gunzTarPerm modes [ '775', '664' ]
+926 silly gunzTarPerm modes [ '775', '664' ]
+927 silly gunzTarPerm modes [ '775', '664' ]
+928 silly gunzTarPerm modes [ '775', '664' ]
+929 silly gunzTarPerm modes [ '775', '664' ]
+930 silly gunzTarPerm modes [ '775', '664' ]
+931 verbose tar unpack /home/vagrant/.npm/sshpk/1.10.1/package.tgz
+932 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/sshpk-8b043cad
+933 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/sshpk-8b043cad is being purged
+934 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/sshpk-8b043cad
+935 silly gunzTarPerm modes [ '775', '664' ]
+936 silly gunzTarPerm modes [ '775', '664' ]
+937 verbose tar unpack /home/vagrant/.npm/jade/1.11.0/package.tgz
+938 verbose tar unpacking to /vagrant/shared/Watch-This-Movie/node_modules/.staging/jade-1637579f
+939 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/jade-1637579f is being purged
+940 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/jade-1637579f
+941 silly gunzTarPerm modes [ '775', '664' ]
+942 silly gunzTarPerm modes [ '775', '664' ]
+943 silly gunzTarPerm modes [ '775', '664' ]
+944 silly gunzTarPerm modes [ '775', '664' ]
+945 silly gunzTarPerm modes [ '775', '664' ]
+946 silly gunzTarPerm extractEntry package.json
+947 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+948 silly gunzTarPerm extractEntry package.json
+949 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+950 silly gunzTarPerm extractEntry package.json
+951 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+952 silly gunzTarPerm extractEntry package.json
+953 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+954 silly gunzTarPerm extractEntry package.json
+955 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+956 silly gunzTarPerm extractEntry package.json
+957 silly gunzTarPerm extractEntry package.json
+958 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+959 silly gunzTarPerm extractEntry package.json
+960 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+961 silly gunzTarPerm extractEntry package.json
+962 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+963 silly gunzTarPerm extractEntry package.json
+964 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+965 silly gunzTarPerm extractEntry package.json
+966 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+967 silly gunzTarPerm extractEntry package.json
+968 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+969 silly gunzTarPerm extractEntry package.json
+970 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+971 silly gunzTarPerm extractEntry package.json
+972 silly gunzTarPerm extractEntry package.json
+973 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+974 silly gunzTarPerm extractEntry package.json
+975 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+976 silly gunzTarPerm extractEntry package.json
+977 silly gunzTarPerm extractEntry README.md
+978 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+979 silly gunzTarPerm extractEntry etc/dashdash.bash_completion.in
+980 silly gunzTarPerm modified mode [ 'etc/dashdash.bash_completion.in', 420, 436 ]
+981 silly gunzTarPerm extractEntry lib/dashdash.js
+982 silly gunzTarPerm modified mode [ 'lib/dashdash.js', 420, 436 ]
+983 silly gunzTarPerm extractEntry README.md
+984 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+985 silly gunzTarPerm extractEntry assert.js
+986 silly gunzTarPerm modified mode [ 'assert.js', 420, 436 ]
+987 silly gunzTarPerm extractEntry .npmignore
+988 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+989 silly gunzTarPerm extractEntry README.md
+990 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+991 silly gunzTarPerm extractEntry README.md
+992 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+993 silly gunzTarPerm extractEntry assert.js
+994 silly gunzTarPerm modified mode [ 'assert.js', 420, 436 ]
+995 silly gunzTarPerm extractEntry .npmignore
+996 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+997 silly gunzTarPerm extractEntry README.md
+998 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+999 silly gunzTarPerm extractEntry .npmignore
+1000 silly gunzTarPerm extractEntry README.md
+1001 silly gunzTarPerm extractEntry .npmignore
+1002 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1003 silly gunzTarPerm extractEntry README.md
+1004 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1005 silly gunzTarPerm extractEntry .npmignore
+1006 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1007 silly gunzTarPerm extractEntry README.md
+1008 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1009 silly gunzTarPerm extractEntry .npmignore
+1010 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1011 silly gunzTarPerm extractEntry README.md
+1012 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1013 silly gunzTarPerm extractEntry README.md
+1014 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1015 silly gunzTarPerm extractEntry assert.js
+1016 silly gunzTarPerm modified mode [ 'assert.js', 420, 436 ]
+1017 silly gunzTarPerm extractEntry .npmignore
+1018 silly gunzTarPerm extractEntry README.md
+1019 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1020 silly gunzTarPerm extractEntry README.md
+1021 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1022 silly gunzTarPerm extractEntry index.js
+1023 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+1024 silly gunzTarPerm extractEntry .npmignore
+1025 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1026 silly gunzTarPerm extractEntry README.md
+1027 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1028 silly gunzTarPerm extractEntry .npmignore
+1029 silly gunzTarPerm extractEntry README.md
+1030 silly gunzTarPerm extractEntry .npmignore
+1031 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1032 silly gunzTarPerm extractEntry README.md
+1033 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1034 silly gunzTarPerm extractEntry .npmignore
+1035 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+1036 silly gunzTarPerm extractEntry README.md
+1037 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+1038 silly gunzTarPerm extractEntry .npmignore
+1039 silly gunzTarPerm extractEntry README.md
+1040 silly gunzTarPerm extractEntry LICENSE
+1041 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1042 silly gunzTarPerm extractEntry index.js
+1043 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+1044 silly gunzTarPerm extractEntry LICENSE
+1045 silly gunzTarPerm extractEntry .travis.yml
+1046 silly gunzTarPerm extractEntry AUTHORS
+1047 silly gunzTarPerm modified mode [ 'AUTHORS', 420, 436 ]
+1048 silly gunzTarPerm extractEntry CHANGES.md
+1049 silly gunzTarPerm modified mode [ 'CHANGES.md', 420, 436 ]
+1050 silly gunzTarPerm extractEntry LICENSE
+1051 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1052 silly gunzTarPerm extractEntry .travis.yml
+1053 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+1054 silly gunzTarPerm extractEntry AUTHORS
+1055 silly gunzTarPerm modified mode [ 'AUTHORS', 420, 436 ]
+1056 silly gunzTarPerm extractEntry CHANGES.md
+1057 silly gunzTarPerm modified mode [ 'CHANGES.md', 420, 436 ]
+1058 silly gunzTarPerm extractEntry LICENSE
+1059 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1060 silly gunzTarPerm extractEntry example.js
+1061 silly gunzTarPerm modified mode [ 'example.js', 420, 436 ]
+1062 silly gunzTarPerm extractEntry LICENSE
+1063 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1064 silly gunzTarPerm extractEntry index.js
+1065 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+1066 silly gunzTarPerm extractEntry LICENSE
+1067 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1068 silly gunzTarPerm extractEntry index.js
+1069 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+1070 silly gunzTarPerm extractEntry AUTHORS
+1071 silly gunzTarPerm modified mode [ 'AUTHORS', 420, 436 ]
+1072 silly gunzTarPerm extractEntry CHANGES.md
+1073 silly gunzTarPerm modified mode [ 'CHANGES.md', 420, 436 ]
+1074 silly gunzTarPerm extractEntry nacl-fast.js
+1075 silly gunzTarPerm modified mode [ 'nacl-fast.js', 420, 436 ]
+1076 silly gunzTarPerm extractEntry LICENSE
+1077 silly gunzTarPerm extractEntry LICENSE
+1078 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1079 silly gunzTarPerm extractEntry CHANGES.md
+1080 silly gunzTarPerm modified mode [ 'CHANGES.md', 420, 436 ]
+1081 silly gunzTarPerm extractEntry LICENSE
+1082 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1083 silly gunzTarPerm extractEntry LICENSE
+1084 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+1085 silly gunzTarPerm extractEntry LICENSE
+1086 silly gunzTarPerm extractEntry jade.js
+1087 silly gunzTarPerm extractEntry lib/index.js
+1088 silly gunzTarPerm extractEntry .gitattributes
+1089 silly gunzTarPerm modified mode [ '.gitattributes', 420, 436 ]
+1090 silly gunzTarPerm extractEntry lib/index.js
+1091 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+1092 silly gunzTarPerm extractEntry lib/ber/errors.js
+1093 silly gunzTarPerm modified mode [ 'lib/ber/errors.js', 420, 436 ]
+1094 silly gunzTarPerm extractEntry test.js
+1095 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+1096 silly gunzTarPerm extractEntry lib/ec.js
+1097 silly gunzTarPerm modified mode [ 'lib/ec.js', 420, 436 ]
+1098 silly gunzTarPerm extractEntry index.js
+1099 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+1100 silly gunzTarPerm extractEntry example.html
+1101 silly gunzTarPerm modified mode [ 'example.html', 420, 436 ]
+1102 silly gunzTarPerm extractEntry almond.1
+1103 silly gunzTarPerm modified mode [ 'almond.1', 420, 436 ]
+1104 silly gunzTarPerm extractEntry almond.0
+1105 silly gunzTarPerm modified mode [ 'almond.0', 420, 436 ]
+1106 silly gunzTarPerm extractEntry nacl-fast.min.js
+1107 silly gunzTarPerm modified mode [ 'nacl-fast.min.js', 420, 436 ]
+1108 silly gunzTarPerm extractEntry nacl.js
+1109 silly gunzTarPerm modified mode [ 'nacl.js', 420, 436 ]
+1110 silly gunzTarPerm extractEntry index.js
+1111 silly gunzTarPerm extractEntry request.js
+1112 silly gunzTarPerm extractEntry .travis.yml
+1113 silly gunzTarPerm extractEntry http_signing.md
+1114 silly gunzTarPerm modified mode [ 'http_signing.md', 420, 436 ]
+1115 silly gunzTarPerm extractEntry lib/index.js
+1116 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+1117 silly gunzTarPerm extractEntry lib/parser.js
+1118 silly gunzTarPerm modified mode [ 'lib/parser.js', 420, 436 ]
+1119 silly gunzTarPerm extractEntry lib/signer.js
+1120 silly gunzTarPerm modified mode [ 'lib/signer.js', 420, 436 ]
+1121 silly gunzTarPerm extractEntry lib/utils.js
+1122 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 436 ]
+1123 silly gunzTarPerm extractEntry lib/verify.js
+1124 silly gunzTarPerm modified mode [ 'lib/verify.js', 420, 436 ]
+1125 silly gunzTarPerm extractEntry .dir-locals.el
+1126 silly gunzTarPerm modified mode [ '.dir-locals.el', 420, 436 ]
+1127 silly gunzTarPerm extractEntry .tern-project
+1128 silly gunzTarPerm modified mode [ '.tern-project', 420, 436 ]
+1129 silly gunzTarPerm extractEntry .travis.yml
+1130 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+1131 silly gunzTarPerm extractEntry codecov.yml
+1132 silly gunzTarPerm extractEntry bin/sshpk-conv
+1133 silly gunzTarPerm modified mode [ 'bin/sshpk-conv', 493, 509 ]
+1134 silly gunzTarPerm extractEntry bin/sshpk-sign
+1135 silly gunzTarPerm modified mode [ 'bin/sshpk-sign', 493, 509 ]
+1136 silly gunzTarPerm extractEntry bin/sshpk-verify
+1137 silly gunzTarPerm modified mode [ 'bin/sshpk-verify', 493, 509 ]
+1138 silly gunzTarPerm extractEntry CHANGELOG.md
+1139 silly gunzTarPerm extractEntry .travis.yml
+1140 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+1141 silly gunzTarPerm extractEntry release.js
+1142 silly gunzTarPerm extractEntry .travis.yml
+1143 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+1144 silly gunzTarPerm extractEntry test/index.js
+1145 silly gunzTarPerm modified mode [ 'test/index.js', 420, 436 ]
+1146 silly gunzTarPerm extractEntry lib/sec.js
+1147 silly gunzTarPerm modified mode [ 'lib/sec.js', 420, 436 ]
+1148 silly gunzTarPerm extractEntry lib/ber/index.js
+1149 silly gunzTarPerm modified mode [ 'lib/ber/index.js', 420, 436 ]
+1150 silly gunzTarPerm extractEntry lib/ber/reader.js
+1151 silly gunzTarPerm modified mode [ 'lib/ber/reader.js', 420, 436 ]
+1152 silly gunzTarPerm extractEntry AUTHORS.md
+1153 silly gunzTarPerm modified mode [ 'AUTHORS.md', 420, 436 ]
+1154 silly gunzTarPerm extractEntry jsdoc.json
+1155 silly gunzTarPerm modified mode [ 'jsdoc.json', 420, 436 ]
+1156 silly gunzTarPerm extractEntry nacl.min.js
+1157 silly gunzTarPerm modified mode [ 'nacl.min.js', 420, 436 ]
+1158 silly gunzTarPerm extractEntry CHANGELOG.md
+1159 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+1160 silly gunzTarPerm extractEntry COPYING.txt
+1161 silly gunzTarPerm modified mode [ 'COPYING.txt', 420, 436 ]
+1162 silly gunzTarPerm extractEntry AUTHORS
+1163 silly gunzTarPerm modified mode [ 'AUTHORS', 420, 436 ]
+1164 silly gunzTarPerm extractEntry .gitattributes
+1165 silly gunzTarPerm modified mode [ '.gitattributes', 420, 436 ]
+1166 silly gunzTarPerm extractEntry runtime.js
+1167 silly gunzTarPerm extractEntry component.json
+1168 silly gunzTarPerm extractEntry lib/auth.js
+1169 silly gunzTarPerm extractEntry lib/cookies.js
+1170 silly gunzTarPerm extractEntry lib/algs.js
+1171 silly gunzTarPerm modified mode [ 'lib/algs.js', 420, 436 ]
+1172 silly gunzTarPerm extractEntry lib/ed-compat.js
+1173 silly gunzTarPerm modified mode [ 'lib/ed-compat.js', 420, 436 ]
+1174 silly gunzTarPerm extractEntry lib/LICENSE-jsbn
+1175 silly gunzTarPerm modified mode [ 'lib/LICENSE-jsbn', 420, 436 ]
+1176 silly gunzTarPerm extractEntry lib/ber/types.js
+1177 silly gunzTarPerm modified mode [ 'lib/ber/types.js', 420, 436 ]
+1178 silly gunzTarPerm extractEntry lib/core.js
+1179 silly gunzTarPerm modified mode [ 'lib/core.js', 420, 436 ]
+1180 silly gunzTarPerm extractEntry bin/build-acorn.js
+1181 silly gunzTarPerm modified mode [ 'bin/build-acorn.js', 420, 436 ]
+1182 silly gunzTarPerm extractEntry bin/generate-identifier-regex.js
+1183 silly gunzTarPerm modified mode [ 'bin/generate-identifier-regex.js', 420, 436 ]
+1184 silly gunzTarPerm extractEntry bin/jade.js
+1185 silly gunzTarPerm extractEntry block-code.html
+1186 silly gunzTarPerm extractEntry History.md
+1187 silly gunzTarPerm extractEntry lib/getProxyFromURI.js
+1188 silly gunzTarPerm extractEntry lib/har.js
+1189 silly gunzTarPerm extractEntry lib/errors.js
+1190 silly gunzTarPerm modified mode [ 'lib/errors.js', 420, 436 ]
+1191 silly gunzTarPerm extractEntry lib/fingerprint.js
+1192 silly gunzTarPerm modified mode [ 'lib/fingerprint.js', 420, 436 ]
+1193 silly gunzTarPerm extractEntry lib/ber/writer.js
+1194 silly gunzTarPerm modified mode [ 'lib/ber/writer.js', 420, 436 ]
+1195 silly gunzTarPerm extractEntry tst/ber/reader.test.js
+1196 silly gunzTarPerm modified mode [ 'tst/ber/reader.test.js', 420, 436 ]
+1197 silly gunzTarPerm extractEntry lib/compiler.js
+1198 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/bcrypt-pbkdf-4dc1bcb8/node_modules is being purged
+1199 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/bcrypt-pbkdf-4dc1bcb8/node_modules
+1200 silly gunzTarPerm extractEntry lib/filters-client.js
+1201 silly gunzTarPerm extractEntry lib/curve255.js
+1202 silly gunzTarPerm modified mode [ 'lib/curve255.js', 420, 436 ]
+1203 silly gunzTarPerm extractEntry lib/dh.js
+1204 silly gunzTarPerm modified mode [ 'lib/dh.js', 420, 436 ]
+1205 silly gunzTarPerm extractEntry bin/acorn
+1206 silly gunzTarPerm modified mode [ 'bin/acorn', 493, 509 ]
+1207 silly gunzTarPerm extractEntry bin/update_authors.sh
+1208 silly gunzTarPerm modified mode [ 'bin/update_authors.sh', 493, 509 ]
+1209 silly gunzTarPerm extractEntry lib/filters.js
+1210 silly gunzTarPerm extractEntry lib/index.js
+1211 silly gunzTarPerm extractEntry lib/helpers.js
+1212 silly gunzTarPerm extractEntry lib/multipart.js
+1213 silly gunzTarPerm extractEntry lib/oauth.js
+1214 silly gunzTarPerm extractEntry lib/doctypes.js
+1215 silly gunzTarPerm extractEntry lib/querystring.js
+1216 silly gunzTarPerm extractEntry tst/ber/writer.test.js
+1217 silly gunzTarPerm modified mode [ 'tst/ber/writer.test.js', 420, 436 ]
+1218 silly gunzTarPerm extractEntry lib/lexer.js
+1219 silly gunzTarPerm extractEntry lib/dhe.js
+1220 silly gunzTarPerm modified mode [ 'lib/dhe.js', 420, 436 ]
+1221 silly gunzTarPerm extractEntry lib/certificate.js
+1222 silly gunzTarPerm modified mode [ 'lib/certificate.js', 420, 436 ]
+1223 silly gunzTarPerm extractEntry lib/redirect.js
+1224 silly gunzTarPerm extractEntry lib/runtime.js
+1225 silly gunzTarPerm extractEntry dist/acorn.js
+1226 silly gunzTarPerm modified mode [ 'dist/acorn.js', 420, 436 ]
+1227 silly gunzTarPerm extractEntry dist/acorn_loose.js
+1228 silly gunzTarPerm modified mode [ 'dist/acorn_loose.js', 420, 436 ]
+1229 silly gunzTarPerm extractEntry lib/eddsa.js
+1230 silly gunzTarPerm modified mode [ 'lib/eddsa.js', 420, 436 ]
+1231 silly gunzTarPerm extractEntry lib/utils.js
+1232 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 436 ]
+1233 silly gunzTarPerm extractEntry lib/parser.js
+1234 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-de7d6d61/node_modules is being purged
+1235 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-de7d6d61/node_modules
+1236 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-6c2bee55/node_modules is being purged
+1237 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-6c2bee55/node_modules
+1238 silly gunzTarPerm extractEntry lib/utils.js
+1239 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-4c4f6ef1/node_modules is being purged
+1240 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-4c4f6ef1/node_modules
+1241 silly gunzTarPerm extractEntry lib/inline-tags.js
+1242 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/dashdash-f1a30222/node_modules is being purged
+1243 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/dashdash-f1a30222/node_modules
+1244 silly gunzTarPerm extractEntry lib/nodes/attrs.js
+1245 silly gunzTarPerm extractEntry lib/index.js
+1246 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+1247 silly gunzTarPerm extractEntry lib/key.js
+1248 silly gunzTarPerm modified mode [ 'lib/key.js', 420, 436 ]
+1249 silly gunzTarPerm extractEntry lib/tunnel.js
+1250 silly gunzTarPerm extractEntry CONTRIBUTING.md
+1251 silly gunzTarPerm extractEntry lib/nodes/code.js
+1252 silly gunzTarPerm extractEntry dist/walk.js
+1253 silly gunzTarPerm modified mode [ 'dist/walk.js', 420, 436 ]
+1254 silly gunzTarPerm extractEntry dist/.keep
+1255 silly gunzTarPerm modified mode [ 'dist/.keep', 420, 436 ]
+1256 silly gunzTarPerm extractEntry .travis.yml
+1257 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+1258 silly gunzTarPerm extractEntry lib/nodes/comment.js
+1259 silly gunzTarPerm extractEntry lib/nodes/doctype.js
+1260 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/getpass-c58a05c4/node_modules is being purged
+1261 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/getpass-c58a05c4/node_modules
+1262 silly gunzTarPerm extractEntry lib/nodes/each.js
+1263 silly gunzTarPerm extractEntry .eslintrc
+1264 silly gunzTarPerm extractEntry lib/private-key.js
+1265 silly gunzTarPerm modified mode [ 'lib/private-key.js', 420, 436 ]
+1266 silly gunzTarPerm extractEntry lib/signature.js
+1267 silly gunzTarPerm modified mode [ 'lib/signature.js', 420, 436 ]
+1268 silly gunzTarPerm extractEntry src/whitespace.js
+1269 silly gunzTarPerm modified mode [ 'src/whitespace.js', 420, 436 ]
+1270 silly gunzTarPerm extractEntry src/locutil.js
+1271 silly gunzTarPerm modified mode [ 'src/locutil.js', 420, 436 ]
+1272 silly gunzTarPerm extractEntry lib/nodes/case.js
+1273 silly gunzTarPerm extractEntry lib/nodes/index.js
+1274 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/jsbn-3b5881fe/node_modules is being purged
+1275 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/jsbn-3b5881fe/node_modules
+1276 silly gunzTarPerm extractEntry lib/ssh-buffer.js
+1277 silly gunzTarPerm modified mode [ 'lib/ssh-buffer.js', 420, 436 ]
+1278 silly gunzTarPerm extractEntry lib/utils.js
+1279 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 436 ]
+1280 silly gunzTarPerm extractEntry src/util.js
+1281 silly gunzTarPerm modified mode [ 'src/util.js', 420, 436 ]
+1282 silly gunzTarPerm extractEntry src/lval.js
+1283 silly gunzTarPerm modified mode [ 'src/lval.js', 420, 436 ]
+1284 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/constantinople-2a060eb3/node_modules is being purged
+1285 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/constantinople-2a060eb3/node_modules
+1286 silly gunzTarPerm extractEntry lib/nodes/literal.js
+1287 silly gunzTarPerm extractEntry lib/nodes/mixin-block.js
+1288 silly gunzTarPerm extractEntry lib/identity.js
+1289 silly gunzTarPerm modified mode [ 'lib/identity.js', 420, 436 ]
+1290 silly gunzTarPerm extractEntry lib/formats/auto.js
+1291 silly gunzTarPerm modified mode [ 'lib/formats/auto.js', 420, 436 ]
+1292 silly gunzTarPerm extractEntry src/location.js
+1293 silly gunzTarPerm modified mode [ 'src/location.js', 420, 436 ]
+1294 silly gunzTarPerm extractEntry src/expression.js
+1295 silly gunzTarPerm modified mode [ 'src/expression.js', 420, 436 ]
+1296 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/ecc-jsbn-e4e1a804/node_modules is being purged
+1297 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/ecc-jsbn-e4e1a804/node_modules
+1298 silly gunzTarPerm extractEntry lib/nodes/mixin.js
+1299 silly gunzTarPerm extractEntry lib/nodes/node.js
+1300 silly gunzTarPerm extractEntry lib/formats/openssh-cert.js
+1301 silly gunzTarPerm modified mode [ 'lib/formats/openssh-cert.js', 420, 436 ]
+1302 silly gunzTarPerm extractEntry lib/formats/pem.js
+1303 silly gunzTarPerm modified mode [ 'lib/formats/pem.js', 420, 436 ]
+1304 silly gunzTarPerm extractEntry src/parseutil.js
+1305 silly gunzTarPerm modified mode [ 'src/parseutil.js', 420, 436 ]
+1306 silly gunzTarPerm extractEntry src/state.js
+1307 silly gunzTarPerm modified mode [ 'src/state.js', 420, 436 ]
+1308 silly gunzTarPerm extractEntry lib/nodes/block.js
+1309 silly gunzTarPerm extractEntry lib/nodes/tag.js
+1310 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/tweetnacl-7d70b9b7/node_modules is being purged
+1311 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/tweetnacl-7d70b9b7/node_modules
+1312 silly gunzTarPerm extractEntry src/statement.js
+1313 silly gunzTarPerm modified mode [ 'src/statement.js', 420, 436 ]
+1314 silly gunzTarPerm extractEntry src/tokencontext.js
+1315 silly gunzTarPerm modified mode [ 'src/tokencontext.js', 420, 436 ]
+1316 silly gunzTarPerm extractEntry src/index.js
+1317 silly gunzTarPerm modified mode [ 'src/index.js', 420, 436 ]
+1318 silly gunzTarPerm extractEntry lib/formats/pkcs1.js
+1319 silly gunzTarPerm modified mode [ 'lib/formats/pkcs1.js', 420, 436 ]
+1320 silly gunzTarPerm extractEntry lib/formats/pkcs8.js
+1321 silly gunzTarPerm modified mode [ 'lib/formats/pkcs8.js', 420, 436 ]
+1322 silly gunzTarPerm extractEntry src/tokenize.js
+1323 silly gunzTarPerm modified mode [ 'src/tokenize.js', 420, 436 ]
+1324 silly gunzTarPerm extractEntry src/identifier.js
+1325 silly gunzTarPerm modified mode [ 'src/identifier.js', 420, 436 ]
+1326 silly gunzTarPerm extractEntry src/tokentype.js
+1327 silly gunzTarPerm modified mode [ 'src/tokentype.js', 420, 436 ]
+1328 silly gunzTarPerm extractEntry lib/nodes/block-comment.js
+1329 silly gunzTarPerm extractEntry lib/nodes/text.js
+1330 silly gunzTarPerm extractEntry src/node.js
+1331 silly gunzTarPerm modified mode [ 'src/node.js', 420, 436 ]
+1332 silly gunzTarPerm extractEntry src/options.js
+1333 silly gunzTarPerm modified mode [ 'src/options.js', 420, 436 ]
+1334 silly gunzTarPerm extractEntry src/loose/acorn_loose.js
+1335 silly gunzTarPerm modified mode [ 'src/loose/acorn_loose.js', 420, 436 ]
+1336 silly gunzTarPerm extractEntry lib/formats/rfc4253.js
+1337 silly gunzTarPerm modified mode [ 'lib/formats/rfc4253.js', 420, 436 ]
+1338 silly gunzTarPerm extractEntry lib/formats/ssh-private.js
+1339 silly gunzTarPerm modified mode [ 'lib/formats/ssh-private.js', 420, 436 ]
+1340 silly gunzTarPerm extractEntry lib/nodes/filter.js
+1341 silly gunzTarPerm extractEntry .release.json
+1342 silly gunzTarPerm modified mode [ '.release.json', 438, 436 ]
+1343 silly gunzTarPerm extractEntry Readme_zh-cn.md
+1344 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/http-signature-633f8033/node_modules is being purged
+1345 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/http-signature-633f8033/node_modules
+1346 silly gunzTarPerm extractEntry lib/formats/ssh.js
+1347 silly gunzTarPerm modified mode [ 'lib/formats/ssh.js', 420, 436 ]
+1348 silly gunzTarPerm extractEntry lib/formats/x509-pem.js
+1349 silly gunzTarPerm modified mode [ 'lib/formats/x509-pem.js', 420, 436 ]
+1350 silly gunzTarPerm extractEntry src/loose/expression.js
+1351 silly gunzTarPerm modified mode [ 'src/loose/expression.js', 420, 436 ]
+1352 silly gunzTarPerm extractEntry src/loose/index.js
+1353 silly gunzTarPerm modified mode [ 'src/loose/index.js', 420, 436 ]
+1354 silly gunzTarPerm extractEntry src/loose/parseutil.js
+1355 silly gunzTarPerm modified mode [ 'src/loose/parseutil.js', 420, 436 ]
+1356 silly gunzTarPerm extractEntry src/loose/state.js
+1357 silly gunzTarPerm modified mode [ 'src/loose/state.js', 420, 436 ]
+1358 silly gunzTarPerm extractEntry src/loose/statement.js
+1359 silly gunzTarPerm modified mode [ 'src/loose/statement.js', 420, 436 ]
+1360 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/asn1-2b0a7c2f/node_modules is being purged
+1361 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/asn1-2b0a7c2f/node_modules
+1362 silly gunzTarPerm extractEntry lib/formats/x509.js
+1363 silly gunzTarPerm modified mode [ 'lib/formats/x509.js', 420, 436 ]
+1364 silly gunzTarPerm extractEntry man/man1/sshpk-conv.1
+1365 silly gunzTarPerm modified mode [ 'man/man1/sshpk-conv.1', 420, 436 ]
+1366 silly gunzTarPerm extractEntry src/loose/tokenize.js
+1367 silly gunzTarPerm modified mode [ 'src/loose/tokenize.js', 420, 436 ]
+1368 silly gunzTarPerm extractEntry src/walk/index.js
+1369 silly gunzTarPerm modified mode [ 'src/walk/index.js', 420, 436 ]
+1370 silly gunzTarPerm extractEntry man/man1/sshpk-sign.1
+1371 silly gunzTarPerm modified mode [ 'man/man1/sshpk-sign.1', 420, 436 ]
+1372 silly gunzTarPerm extractEntry man/man1/sshpk-verify.1
+1373 silly gunzTarPerm modified mode [ 'man/man1/sshpk-verify.1', 420, 436 ]
+1374 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/jodid25519-ba4e3fc6/node_modules is being purged
+1375 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/jodid25519-ba4e3fc6/node_modules
+1376 silly gunzTarPerm extractEntry src/bin/acorn.js
+1377 silly gunzTarPerm modified mode [ 'src/bin/acorn.js', 420, 436 ]
+1378 silly gunzTarPerm extractEntry .editorconfig
+1379 silly gunzTarPerm modified mode [ '.editorconfig', 420, 436 ]
+1380 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/request-8e65ad0b/node_modules is being purged
+1381 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/request-8e65ad0b/node_modules
+1382 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/sshpk-8b043cad/node_modules is being purged
+1383 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/sshpk-8b043cad/node_modules
+1384 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/jade-1637579f/node_modules is being purged
+1385 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/jade-1637579f/node_modules
+1386 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.staging/acorn-a01622cc/node_modules is being purged
+1387 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.staging/acorn-a01622cc/node_modules
+1388 silly doParallel preinstall 17
+1389 silly preinstall acorn@2.7.0 /vagrant/shared/Watch-This-Movie/node_modules/.staging/acorn-a01622cc
+1390 info lifecycle acorn@2.7.0~preinstall: acorn@2.7.0
+1391 silly preinstall asn1@0.2.3 /vagrant/shared/Watch-This-Movie/node_modules/.staging/asn1-2b0a7c2f
+1392 info lifecycle asn1@0.2.3~preinstall: asn1@0.2.3
+1393 silly preinstall constantinople@3.0.2 /vagrant/shared/Watch-This-Movie/node_modules/.staging/constantinople-2a060eb3
+1394 info lifecycle constantinople@3.0.2~preinstall: constantinople@3.0.2
+1395 silly preinstall assert-plus@1.0.0 /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-6c2bee55
+1396 info lifecycle assert-plus@1.0.0~preinstall: assert-plus@1.0.0
+1397 silly preinstall dashdash@1.14.0 /vagrant/shared/Watch-This-Movie/node_modules/.staging/dashdash-f1a30222
+1398 info lifecycle dashdash@1.14.0~preinstall: dashdash@1.14.0
+1399 silly preinstall assert-plus@1.0.0 /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-de7d6d61
+1400 info lifecycle assert-plus@1.0.0~preinstall: assert-plus@1.0.0
+1401 silly preinstall getpass@0.1.6 /vagrant/shared/Watch-This-Movie/node_modules/.staging/getpass-c58a05c4
+1402 info lifecycle getpass@0.1.6~preinstall: getpass@0.1.6
+1403 silly preinstall jsbn@0.1.0 /vagrant/shared/Watch-This-Movie/node_modules/.staging/jsbn-3b5881fe
+1404 info lifecycle jsbn@0.1.0~preinstall: jsbn@0.1.0
+1405 silly preinstall ecc-jsbn@0.1.1 /vagrant/shared/Watch-This-Movie/node_modules/.staging/ecc-jsbn-e4e1a804
+1406 info lifecycle ecc-jsbn@0.1.1~preinstall: ecc-jsbn@0.1.1
+1407 silly preinstall jodid25519@1.0.2 /vagrant/shared/Watch-This-Movie/node_modules/.staging/jodid25519-ba4e3fc6
+1408 info lifecycle jodid25519@1.0.2~preinstall: jodid25519@1.0.2
+1409 silly preinstall assert-plus@1.0.0 /vagrant/shared/Watch-This-Movie/node_modules/.staging/assert-plus-4c4f6ef1
+1410 info lifecycle assert-plus@1.0.0~preinstall: assert-plus@1.0.0
+1411 silly preinstall tweetnacl@0.14.3 /vagrant/shared/Watch-This-Movie/node_modules/.staging/tweetnacl-7d70b9b7
+1412 info lifecycle tweetnacl@0.14.3~preinstall: tweetnacl@0.14.3
+1413 silly preinstall bcrypt-pbkdf@1.0.0 /vagrant/shared/Watch-This-Movie/node_modules/.staging/bcrypt-pbkdf-4dc1bcb8
+1414 info lifecycle bcrypt-pbkdf@1.0.0~preinstall: bcrypt-pbkdf@1.0.0
+1415 silly preinstall sshpk@1.10.1 /vagrant/shared/Watch-This-Movie/node_modules/.staging/sshpk-8b043cad
+1416 info lifecycle sshpk@1.10.1~preinstall: sshpk@1.10.1
+1417 silly preinstall http-signature@1.1.1 /vagrant/shared/Watch-This-Movie/node_modules/.staging/http-signature-633f8033
+1418 info lifecycle http-signature@1.1.1~preinstall: http-signature@1.1.1
+1419 silly preinstall jade@1.11.0 /vagrant/shared/Watch-This-Movie/node_modules/.staging/jade-1637579f
+1420 info lifecycle jade@1.11.0~preinstall: jade@1.11.0
+1421 silly preinstall request@2.75.0 /vagrant/shared/Watch-This-Movie/node_modules/.staging/request-8e65ad0b
+1422 info lifecycle request@2.75.0~preinstall: request@2.75.0
+1423 silly lifecycle asn1@0.2.3~preinstall: no script for preinstall, continuing
+1424 silly lifecycle acorn@2.7.0~preinstall: no script for preinstall, continuing
+1425 silly lifecycle constantinople@3.0.2~preinstall: no script for preinstall, continuing
+1426 silly lifecycle assert-plus@1.0.0~preinstall: no script for preinstall, continuing
+1427 silly lifecycle dashdash@1.14.0~preinstall: no script for preinstall, continuing
+1428 silly lifecycle assert-plus@1.0.0~preinstall: no script for preinstall, continuing
+1429 silly lifecycle getpass@0.1.6~preinstall: no script for preinstall, continuing
+1430 silly lifecycle jsbn@0.1.0~preinstall: no script for preinstall, continuing
+1431 silly lifecycle ecc-jsbn@0.1.1~preinstall: no script for preinstall, continuing
+1432 silly lifecycle jodid25519@1.0.2~preinstall: no script for preinstall, continuing
+1433 silly lifecycle assert-plus@1.0.0~preinstall: no script for preinstall, continuing
+1434 silly lifecycle tweetnacl@0.14.3~preinstall: no script for preinstall, continuing
+1435 silly lifecycle http-signature@1.1.1~preinstall: no script for preinstall, continuing
+1436 silly lifecycle bcrypt-pbkdf@1.0.0~preinstall: no script for preinstall, continuing
+1437 silly lifecycle sshpk@1.10.1~preinstall: no script for preinstall, continuing
+1438 silly lifecycle jade@1.11.0~preinstall: no script for preinstall, continuing
+1439 silly lifecycle request@2.75.0~preinstall: no script for preinstall, continuing
+1440 silly doReverseSerial remove 0
+1441 silly doSerial move 0
+1442 silly doSerial finalize 17
+1443 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/acorn
+1444 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/asn1
+1445 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/constantinople
+1446 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/dashdash/node_modules/assert-plus
+1447 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/dashdash
+1448 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/getpass/node_modules/assert-plus
+1449 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/getpass
+1450 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/jsbn
+1451 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/ecc-jsbn
+1452 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/jodid25519
+1453 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/sshpk/node_modules/assert-plus
+1454 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/tweetnacl
+1455 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/bcrypt-pbkdf
+1456 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/sshpk
+1457 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/http-signature
+1458 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/jade
+1459 silly finalize /vagrant/shared/Watch-This-Movie/node_modules/request
+1460 silly doSerial build 17
+1461 silly build acorn@2.7.0
+1462 info linkStuff acorn@2.7.0
+1463 silly linkStuff acorn@2.7.0 has /vagrant/shared/Watch-This-Movie/node_modules as its parent node_modules
+1464 verbose linkBins acorn@2.7.0
+1465 verbose link bins [ { acorn: './bin/acorn' },
+1465 verbose link bins   '/vagrant/shared/Watch-This-Movie/node_modules/.bin',
+1465 verbose link bins   false ]
+1466 verbose linkMans acorn@2.7.0
+1467 silly gentlyRm /vagrant/shared/Watch-This-Movie/node_modules/.bin/acorn is being purged
+1468 verbose gentlyRm don't care about contents; nuking /vagrant/shared/Watch-This-Movie/node_modules/.bin/acorn
+1469 verbose unlock done using /home/vagrant/.npm/_locks/staging-3898665aba40f3d8.lock for /vagrant/shared/Watch-This-Movie/node_modules/.staging
+1470 silly rollbackFailedOptional Starting
+1471 silly rollbackFailedOptional Finishing
+1472 silly runTopLevelLifecycles Finishing
+1473 silly install printInstalled
+1474 verbose stack Error: EPROTO: protocol error, symlink '../acorn/bin/acorn' -> '/vagrant/shared/Watch-This-Movie/node_modules/.bin/acorn'
+1474 verbose stack     at Error (native)
+1475 verbose cwd /vagrant/shared/Watch-This-Movie
+1476 error Linux 3.13.0-100-generic
+1477 error argv "/home/vagrant/n/bin/node" "/home/vagrant/n/bin/npm" "install"
+1478 error node v6.8.1
+1479 error npm  v4.0.0
+1480 error path ../acorn/bin/acorn
+1481 error code EPROTO
+1482 error errno -71
+1483 error syscall symlink
+1484 error EPROTO: protocol error, symlink '../acorn/bin/acorn' -> '/vagrant/shared/Watch-This-Movie/node_modules/.bin/acorn'
+1485 error If you need help, you may report this error at:
+1485 error     <https://github.com/npm/npm/issues>
+1486 verbose exit [ -71, true ]

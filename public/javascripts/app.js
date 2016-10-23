@@ -2,7 +2,19 @@
 
 //client side javascript
 
-
+/*
+var ConnectToOMDB = function (){
+  $.ajax(
+  {
+    type: 'GET',
+    url: 'http://www.omdbapi.com/?t=dark+Knight&y=&plot=short&r=json',
+    success : function(data){
+      console.log(data);
+    }
+  });
+  
+}
+*/
 //==========================================================
 //Use to display movie into html 
 //  IN    movieObject - movieObject only that is formatted
@@ -10,26 +22,23 @@
 //  
 //  TAG   #movieCard - html id 
 //==========================================================
-
+var ListArray= [];
 var AddMovieToHtml= function(movieObject){
   'use strict';
 
   //$('#movieCard2').append(
   $('#movieCard').empty();
 
-  /*$('#movieCard').append(
-      '<div class="ui cards">'+
-      '<div class="card"><div class="image">' +
-        '<img src="' + movieObject.Poster + '">'+
+   $('#movieCard').append(
+    '<div class="ui middle aligned center aligned cards">'+
+      '<div class="ui centered card"><div class="image">' +
+        '<img src="' + movieObject.mPosterUrl + '">'+
       '</div>' +
       '<div class="content">' +
-        '<div class="header" id="movieTitle">'+ movieObject.Title + '</div>' +
-        '<div class="meta">' + movieObject.Rated + '</div>' +
-        '<div class="description">' + movieObject.Genre + '</div>' +
+        '<div class="header" id="movieTitle">'+ movieObject.mTitle + '</div>' +
+  
+        '<div class="description">' + movieObject.mYear + '</div>' +
       '</div>' +
-      '<div class="extra content">' +
-        '<div class="meta">'+ movieObject.Plot + '</div>'+
-      '</div>' + 
       '<div class="extra content" id="VoteResult">' +
         '<div class="meta">VotePlease T-T</div>'+
         '<div class="ui two buttons">' + 
@@ -38,29 +47,30 @@ var AddMovieToHtml= function(movieObject){
         '</div>'+
       '</div>'+
     '</div>'
-    );*/
+    );
 
     //supra code
-    $('#movieCard').append(
-      '<div class="ui middle aligned center aligned cards">'+
-      '<div class="ui centered card"><div class="image">' +
-        '<img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_SX300.jpg">'+
-      '</div>' +
-      '<div class="content">' +
-        '<div class="header" id="movieTitle">'+ movieObject.movieName + '</div>' +
-      '</div>' +
-      '<div class="extra content" id="VoteResult">' +
-        '<div class="meta">VotePlease T-T</div>'+
-        '<div class="ui two buttons">' + 
-          '<div id="' + movieObject.movieName + ' Up" class="VoteUp ui green button">Watch</div>'+
-          '<div id="' + movieObject.movieName + ' Down" class="VoteDown ui red button">Ignore</div>'+
-        '</div>'+
-      '</div>'+
-    '</div>'
-    );
+    // $('#movieCard').append(
+    //   '<div class="ui middle aligned center aligned cards">'+
+    //   '<div class="ui centered card"><div class="image">' +
+    //     '<img src='+movieObject.mPosterUrl+'>'+
+    //   '</div>' +
+    //   '<div class="content">' +
+    //     '<div class="header" id="movieTitle">'+ movieObject.movieName + '</div>' +
+    //   '</div>' +
+    //   '<div class="extra content" id="VoteResult">' +
+    //     '<div class="meta">VotePlease T-T</div>'+
+    //     '<div class="ui two buttons">' + 
+    //       '<div id="VoteUp" class="ui green button">Watch</div>'+
+    //       '<div class="ui red button" id="VoteDown">Ignore</div>'+
+    //     '</div>'+
+    //   '</div>'+
+    // '</div>'
+    // );
     
     //test();
-    VoteButton();
+
+    VoteButton(movieObject.movieName);
     /*
     '<div class="ui two buttons">' + 
       '<div id="VoteUp" type="button" class="ui basic green button">Watch</div>'+
@@ -73,29 +83,45 @@ var AddMovieToHtml= function(movieObject){
     console.log("printEverything");
 }
 
-var VoteButton = function(){
-	
-  $('.VoteUp').click(function () {
-    console.log('Voting up');
-	var myId = $('.VoteUp').attr('id');
+var VoteButton = function(nameMovie){
+  
+  $('#VoteUp').click(function () {
+    console.log('TTTT 33' + nameMovie);
     $('#VoteResult').empty();
-    Voting(1, myId.substring(0, myId.length-3));
+
+    Voting(nameMovie,1);
+    
   });
   
-  $('.VoteDown').click(function () {
-    console.log('Voting down');
-	var myId = $('.VoteDown').attr('id');
+  $('#VoteDown').click(function () {
+    console.log('testDown');
     $('#VoteResult').empty();
-    Voting(-1, myId.substring(0, myId.length-5));
+
+    Voting(nameMovie,-1);
+    
   });
-  
+
+  $('#nextButton').click(function(){
+  console.log(nameMovie +'Next');
+    callShowAllMoviesFunction();
+  });
+
 }
 
 
-var Voting = function(score, movieName){
+
+var Nexting = function(){
+  
+  $('#VoteResult').append('<div class="ui button" id="nextButton">NEXT</div>');
+  VoteButton();
+}
+
+
+var Voting = function(nameMovie,score){
   var result; 
-  var jsonStr = JSON.stringify({'score': score, 'movieName': movieName});
+  var jsonStr = JSON.stringify({'movieName': nameMovie, 'score': score});
 	console.log(jsonStr);
+  //$('#VoteResult').append('<h3>Score: ' + 10 + ' for ' + nameMovie + '</h3>');
   
   $.ajax({  
     type: 'POST',
@@ -106,18 +132,21 @@ var Voting = function(score, movieName){
       success: function(data) {
         result = data;
         console.log(result);
-        $('#VoteResult').append('Watch: ' + result.upVote + ' Ignore: ' + result.downVote);
+        $('#VoteResult').append('<h3>Watch: ' + result.upVote + ' | Ignore: ' + result.downVote + '</h3>');
+        Nexting();
       },
       error: function(){
         console.log("Cannot Vote")
       }
   });
-
+  
 }
 //end of new code
 
-
 $(function(){
+  
+  
+  
 
 	callShowAllMoviesFunction();
 
@@ -134,6 +163,7 @@ $(function(){
 		$('.right_menu1').show();
 		$('.login_seg').hide();
 		$('.main_seg').show();
+		$('span.userId').empty();
 
 	});
 
@@ -147,6 +177,13 @@ $(function(){
 
 	$('.addmovie_button').click(function () {
     $('.addmovie_modal').modal('show');
+	});
+
+	$('.showmovie_button').click(function () {
+    var userID = $('span.userId').text();
+    var jsonStr = JSON.stringify({'userID': userID});
+    callShowMoviesFor1User(jsonStr);
+    $('.movie_seg').show();
 	});
 
 	$('.login_form').form({
@@ -268,6 +305,35 @@ $(function(){
 	
 });
 
+
+//ListAllUserMovie-------------------------------------------------
+// list all the movie the user have with the score attach to it
+//  IN       - arrayLenght - size of an array
+//  IN       - movieArray - array of an object
+//                          contian movieName and Score
+//  TAG      - listAllMovies - id
+//------------------------------------------------------------------
+/*
+var ListAllUserMovie = function(arrayLenght, movieArray){
+  var counter = 0;
+  $('#listAllMovies').empty();
+  
+  $('#listAllMovies').append('<div class="ui middle aligned dividec list">');
+  for(; counter < arrayLenght; counter++){
+    $('#listAllMovies').append(
+    '<div class="item">' +
+      '<div class="right floated content">' +
+        '<div>' + movieArray[counter].score + '</div>' +
+      '</div>' +
+      '<div class="content">' + movieArray[counter].movieName + '</div>' +
+    '</div>'
+    )
+  }
+    $('#listAllMovies').append('</div>');
+}
+
+*/
+
 var callSignUpFunction = function(){
 		// body...
 		// submit form data as json on button click
@@ -335,29 +401,37 @@ var callSignUpFunction = function(){
 	                                    $('.login_seg').show();
 	        							$('.main_seg').hide();
 
-	        							console.log(data.movieList.length);
-	        							for(var i=0;i<data.movieList.length;i++)
-	        							{
-	        								console.log('inside for loop');
-	        								console.log(data.movieList[i].movieName);
-	        								$result = $('<div class='+"'listitem'"+'><div class='+"'listcontent'"+'>').
-                                    		text(data.movieList[i].movieName);
-                                    		$('.listitem').append($result);
+	        							$('.movie_seg').hide();
+
+	        							// console.log(data.movieList.length);
+	        							// for(var i=0;i<data.movieList.length;i++)
+	        							// {
+	        							// 	console.log('inside for loop');
+	        							// 	console.log(data.movieList[i].movieName);
+	        							// 	$result = $('<div class='+"'listitem'"+'><div class='+"'listcontent'"+'>').
+                //                     		text(data.movieList[i].movieName);
+                //                     		$('.listitem').append($result);
 	        								
-	        							}
+	        							// }
                                     }
                                     	
 
-                                }
+                      }
+                      
+                    //%%%%%%%%%%%%%%%%%%%%%%%%
+                    //%%%Use for the List%%%%%
+                    //%%%%%%%%%%%%%%%%%%%%%%%%
+                    //{movieList: [{movieName: <> , movieScore: <>}]}
+                    //ListAllUserMovie(data.movieList.lenght, data.movieList);
 
-
-                        });
+          });
 		//get all the movies for this user from database
 
 
 	 }
 	 var callAddMoviesFunction = function() {
 	 	// body..
+    console.log('calladdmf');
 	 	var movieName = document.getElementsByName('moviename')[0].value;
 	 	var userID = $('span.userId').text();
 	 	console.log(userID);
@@ -396,7 +470,7 @@ var callSignUpFunction = function(){
                     type: 'GET',
                     // data: jsonStr,
                     dataType: 'json',
-                    // contentType: 'application/json',
+                    contentType: 'application/json',
                     url: 'http://localhost:3000/ShowMovie',            
                     success: function(data) {
                                     console.log('success');
@@ -407,7 +481,7 @@ var callSignUpFunction = function(){
                                     // $('.addmovie_form').trigger('reset');
                                     // // $('.addmovie_modal').modal('hide');
                                     // $('.result3').html();
-                                    
+                                    ConnectToOMDB();
 
                                     // $('.right_menu1').hide();
                                     // $('.pointing.label').text('Welcome '+data);
@@ -416,6 +490,59 @@ var callSignUpFunction = function(){
 
                                 }
                         });
+	 }
+
+var callShowMoviesFor1User = function(jsonStr){
+
+		$.ajax({
+                    type: 'POST',
+                    data: jsonStr,
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    url: 'http://localhost:3000/showMoviesFor1User',            
+                    success: function(data) {
+                                    console.log('success');
+                                    console.log(jsonStr);
+                                    console.log(JSON.stringify(data));
+                                    console.log(data);
+
+                                    if(data.error){
+                                    	// $('.result2').html(data.error);
+                                    	console.log('error');
+                                    }
+                                    else{
+	        							console.log(data.movieList.length);
+	        							if(ListArray.length > 0){
+	        									ListArray.push(data.movieList[data.movieList.length-1].movieName);
+	        									// $result = $('<div class='+"'ui blue segment'"+'>').
+	                 //                    		text(data.movieList[data.movieList.length-1].movieName);
+												$('.movie_seg').append('<div class='+"'ui blue segment'"+'>'+
+													data.movieList[data.movieList.length-1].movieName +
+													'<div class='+'"ui right floated span"'+'><i class='+"'thumbs up icon'"+'></i>'+data.movieList[data.movieList.length-1].mUpVote+
+													'<i class='+"'thumbs down icon'"+'></i>'+data.movieList[data.movieList.length-1].mDownVote+'</div></div>'
+													);	
+	        							}
+	        							else{
+	                                    		for(var i=0;i<data.movieList.length;i++)
+		        								{
+		        								console.log(data.movieList[i].movieName);
+		        								ListArray.push(data.movieList[i].movieName);
+	                                    		$('.movie_seg').append('<div class='+"'ui blue segment'"+'>'+
+													data.movieList[i].movieName +
+													'<div class='+'"ui right floated span"'+'><i class='+"'thumbs up icon'"+'></i>'+data.movieList[i].mUpVote+
+													'<i class='+"'thumbs down icon'"+'></i>'+data.movieList[i].mDownVote+'</div></div>'
+													);	
+	                                    		}
+	        								
+	        							}
+                                    }
+                                    	
+
+                                }
+
+
+                        });
+
 	 }
 
 
